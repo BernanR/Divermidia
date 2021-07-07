@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo</title>
+
+    <!-- CSS only -->
+    <link href="resources/library/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="resources/css/custom.css" rel="stylesheet" />
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="resources/library/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="resources/library/owlcarousel/assets/owl.theme.default.min.css">
+
+    <!-- JS only -->
+    <script src="resources/library/js/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav nav-bar">
+                        <a class="nav-link" href="index.html"><strong>Home</strong></a>
+                        <a class="nav-link" href="#"><strong>Agência</strong></a>
+                        <a class="nav-link" href="#"><strong>Portifólio</strong></a>
+                        <a class="nav-link" href="#"><strong>Contato</strong></a>
+                        <a class="nav-link" href="#"><strong>Blog</strong></a>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn btn-primary btn-orcamento"><strong>ORÇAMENTO</strong></button>
+                </div>
+
+            </div>
+        </nav>
+        <div class="container">
+            <div class="redes-sociais">
+                <ul>
+                    <li><img src="images/ico-youtube.png"></li>
+                    <li><img src="images/ico-instagran.png"></li>
+                    <li><img src="images/ico-pinteterest.png"></li>
+                    <li><img src="images/ico-facebook.png"></li>
+                    <li><img src="images/ico-linkedin.png"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-blue">
+            <p></p>
+        </div>
+    </header>
+    <main>
+
+        <section id="pg-contato">
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 text-contato">
+
+                        <h2>CONTATO</h2>
+
+                        <h5>ENDEREÇO</h5>
+                        <p>Centro Empresarial lle de France<br/>Rua Campos Sales - 167<br/>3° andar - Mauá - SP</p>
+
+                        <h5>EMAIL</h5>
+                        <p>email@divermidia.com.br</p>
+
+                        <h5>WHATSAPP BUSINESS</h5>
+                        <p>email@divermidia.com.br</p>
+                    </div>
+
+
+                    <div class="container col-6">
+                        <div id="download">
+                            <div>
+                                <img src="images/pdf.png">
+                            </div>
+                            <div>
+                                <p>FAÇA O DOWNLOAD DA NOSSA APRESENTAÇÃO COMPLETA <br/>E CONHEÇA MAIS DETALHES SOBRE NOSSOS SERVIÇOS</p>
+                            </div>    
+                        </div>
+                        <div class="clear"></div>
+                        <form class="main-form">
+                            <div>
+                                <p><strong>Solicite um orçamento</strong></p>
+                                <input type="text" class="form-divm" placeholder="Nome:"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="tel" class="form-divm" placeholder="Telefone:"
+                                    id="exampleInputPassword1">
+                            </div>
+
+                            <div>
+                                <textarea placeholder="Mensagem:"></textarea>
+                            </div>
+                            <div class="botao">
+                                <p>
+                                    <button type="submit" class="btn btn-primary btn-enviar">Enviar</button>
+                                </p>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="navbar-fixed-bottom position-absolute bottom-0" style="width: 100%;">
+        <div>
+            <p>Divermidia 2021 | Todos os direitos reservados | (11) 94780-7349 / email@divermidia.com.br</p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="resources/library/js/bootstrap.min.js"></script>
+    <script src="resources/library/owlcarousel/owl.carousel.min.js"></script>
+    <script src="resources/js/main.js"></script>
+    
+    <script>
+    $('.loop').owlCarousel({
+        center: true,
+        items:1,
+        loop:true,
+        margin:0
+    });
+    </script>
+
+    <script>
+        $('#modal1').on('hidden.bs.modal', function (e) {
+        // do something...
+        $('#modal1 iframe').attr("src", $("#modal1 iframe").attr("src"));
+        });
+
+        $('#modal6').on('hidden.bs.modal', function (e) {
+        // do something...
+        $('#modal6 iframe').attr("src", $("#modal6 iframe").attr("src"));
+        });
+
+        $('#modal4').on('hidden.bs.modal', function (e) {
+        // do something...
+        $('#modal4 iframe').attr("src", $("#modal4 iframe").attr("src"));
+        });
+    </script>
+
+</body>
+
+</html>

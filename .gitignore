@@ -1,0 +1,10 @@
+# vs code
+workspace-divermidia.code-workspace
+# secret data about application
+./config
+./assets/uploads/*
+./divermidia
+
+
+# captcha images
+captcha/*

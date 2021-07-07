@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo</title>
+
+    <!-- CSS only -->
+    <link href="resources/library/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="resources/css/custom.css" rel="stylesheet" />
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="resources/library/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="resources/library/owlcarousel/assets/owl.theme.default.min.css">
+
+    <!-- JS only -->
+    <script src="resources/library/js/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    .lightbox-pf .modal-content {
+        border: 1px solid;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav nav-bar">
+                        <a class="nav-link" href="#"><strong>Home</strong></a>
+                        <a class="nav-link" href="#"><strong>Agência</strong></a>
+                        <a class="nav-link" href="#"><strong>Portifólio</strong></a>
+                        <a class="nav-link" href="contato.html"><strong>Contato</strong></a>
+                        <a class="nav-link" href="#"><strong>Blog</strong></a>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn btn-primary btn-orcamento"><strong>ORÇAMENTO</strong></button>
+                </div>
+
+            </div>
+        </nav>
+        <div class="container">
+            <div class="redes-sociais">
+                <ul>
+                    <li><img src="images/ico-youtube.png"></li>
+                    <li><img src="images/ico-instagran.png"></li>
+                    <li><img src="images/ico-pinteterest.png"></li>
+                    <li><img src="images/ico-facebook.png"></li>
+                    <li><img src="images/ico-linkedin.png"></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            MODAL
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade lightbox-pf" id="modalTeste" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <a href="">Saiba mais</a>
+                        <button type="button" class="btn btn-link" data-bs-dismiss="modal">FECHAR X</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section id="home">
+            <div class="main-banner owl-carousel">
+                <div class="item"><img src="images/banner-fixo.png"></div>
+                <div class="item"><img src="images/banner-fixo.png"></div>
+                <div class="item"><img src="images/banner-fixo.png"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+
+                        <div class="main-chamada">
+                            <p><strong>Sua loja tem potencial e você não sabia</strong></p>
+
+                            <h2>USE AS REDES SOCIAIS DO SEU SUPERMERCADO DE FORMA ESTRATÉGICA E ALCANCE 1000 PESSOAS COM
+                                *R$ 4,99/CAMPANHA.</h2>
+
+                            <p>Conheça os 3 pilares de sucesso da Divermidia para sua loja ampliar o potencial de vendas
+                                pelo menor custo-beneficio</p>
+                        </div>
+
+                        <div class="btn-saiba">
+                            <p>
+                                <button type="submit" class="btn btn-primary btn-saiba"><strong>Saiba
+                                        Mais</strong></button>
+                            </p>
+                        </div>
+
+                        <div>
+                            <form class="main-form">
+                                <div>
+                                    <p><strong>Solicite um orçamento</strong></p>
+                                    <input type="text" class="form-divm" placeholder="Nome:" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <input type="tel" class="form-divm" placeholder="Telefone:"
+                                        id="exampleInputPassword1">
+                                </div>
+
+                                <div>
+                                    <textarea placeholder="Mensagem:"></textarea>
+                                </div>
+                                <div class="botao">
+                                    <p>
+                                        <button type="submit" class="btn btn-primary btn-enviar">Enviar</button>
+                                    </p>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-6 banner-fixo">
+                        <img src="images/banner-2.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="agencia">
+            <div class="container">
+                <div class="row justify-content-lg-center">
+                    <div class="col col-5 text-center">
+                        <p>AGÊNCIA DIVERMIDIA</p>
+                        <p>
+                            HÁ 20 ANOS FORNECENDO SOLUÇÕES EM PUBLICIDADE E MARKETING COM EXCELÊNCIA, SEMPRE BUSCANDO A
+                            SATISFAÇÃO DOS CLIENTES...
+                        </p>
+
+                        <p class="btn-saiba">
+                            <!-- ISSO DEVE SER UM LINK TAG <a> pois vai jogar para outra página -->
+                            <button type="submit" class="btn btn-primary btn-saiba justify-content-lg-center">
+                                <strong>Saiba Mais</strong>
+                            </button>
+                        </p>
+
+                        <div class="video-agencia">
+                            <iframe src="https://www.youtube.com/embed/xBkMoCy5PhQ" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                            <p class="demo text-center">DEMO REEL 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portifolio">
+            <div class="white-bg">
+                <h2 class="text-center title">PORTIFÓLIO</h2>
+            </div>
+
+            <div class="row justify-content-lg-center mg-0">
+                <div class="jobs-recentes">
+                    <div class="row justify-content-lg-center">
+                        <div class="col col-3">
+                            <h5>JOBS RECENTES</h5>
+                        </div>
+                        <div class="col col-6 right-text jobs-text">
+                            <p>
+                                CRIATIVIDADE E TÉCNICA NA CRIAÇÃO DA SUA IDENTIDADE VISUAL ATRAIRÁ AINDA<br> MAIS SEUS
+                                CLIENTES
+                                EM
+                                POTENCIAL, POIS A SUA MARCA SE COMUNICARÁ COM O SEU PÚBLICO
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="columns">
+                    <div class="loop owl-carousel">
+                        <!-- Grid row -->
+                        <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-12 mb-4">
+
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="modal1" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+
+                                        <!--Content-->
+                                        <div class="modal-content">
+
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+
+                                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                    <iframe class="embed-responsive-item"
+                                                        src="https://www.youtube.com/embed/A3PDXmYoF5U"
+                                                        allowfullscreen></iframe>
+                                                </div>
+
+                                            </div>
+
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-center">
+                                                <span class="mr-4">Spread the word!</span>
+                                                <a type="button" class="btn-floating btn-sm btn-fb"><i
+                                                        class="fab fa-facebook-f"></i></a>
+                                                <!--Twitter-->
+                                                <a type="button" class="btn-floating btn-sm btn-tw"><i
+                                                        class="fab fa-twitter"></i></a>
+                                                <!--Google +-->
+                                                <a type="button" class="btn-floating btn-sm btn-gplus"><i
+                                                        class="fab fa-google-plus-g"></i></a>
+                                                <!--Linkedin-->
+                                                <a type="button" class="btn-floating btn-sm btn-ins"><i
+                                                        class="fab fa-linkedin-in"></i></a>
+
+                                                <button type="button"
+                                                    class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                                    data-dismiss="modal">Close</button>
+
+                                            </div>
+
+                                        </div>
+                                        <!--/.Content-->
+
+                                    </div>
+                                </div>
+                                <!--Modal: Name-->
+
+                                <a><img class="img-fluid z-depth-1"
+                                        src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt="video"
+                                        data-toggle="modal" data-target="#modal1"></a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="modal6" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+
+                                        <!--Content-->
+                                        <div class="modal-content">
+
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+
+                                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                    <iframe class="embed-responsive-item"
+                                                        src="https://www.youtube.com/embed/wTcNtgA6gHs"
+                                                        allowfullscreen></iframe>
+                                                </div>
+
+                                            </div>
+
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-center">
+                                                <span class="mr-4">Spread the word!</span>
+                                                <a type="button" class="btn-floating btn-sm btn-fb"><i
+                                                        class="fab fa-facebook-f"></i></a>
+                                                <!--Twitter-->
+                                                <a type="button" class="btn-floating btn-sm btn-tw"><i
+                                                        class="fab fa-twitter"></i></a>
+                                                <!--Google +-->
+                                                <a type="button" class="btn-floating btn-sm btn-gplus"><i
+                                                        class="fab fa-google-plus-g"></i></a>
+                                                <!--Linkedin-->
+                                                <a type="button" class="btn-floating btn-sm btn-ins"><i
+                                                        class="fab fa-linkedin-in"></i></a>
+
+                                                <button type="button"
+                                                    class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                                    data-dismiss="modal">Close</button>
+
+                                            </div>
+
+                                        </div>
+                                        <!--/.Content-->
+
+                                    </div>
+                                </div>
+                                <!--Modal: Name-->
+
+                                <a><img class="img-fluid z-depth-1"
+                                        src="https://mdbootstrap.com/img/screens/yt/screen-video-2.jpg" alt="video"
+                                        data-toggle="modal" data-target="#modal6"></a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="modal4" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+
+                                        <!--Content-->
+                                        <div class="modal-content">
+
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+
+                                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                    <iframe class="embed-responsive-item"
+                                                        src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                                                        allowfullscreen></iframe>
+                                                </div>
+
+                                            </div>
+
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-center">
+
+                                                <button type="button"
+                                                    class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                                    data-dismiss="modal">Close</button>
+
+                                            </div>
+
+                                        </div>
+                                        <!--/.Content-->
+
+                                    </div>
+                                </div>
+                                <!--Modal: Name-->
+
+                                <a><img class="img-fluid z-depth-1"
+                                        src="https://mdbootstrap.com/img/screens/yt/screen-video-3.jpg" alt="video"
+                                        data-toggle="modal" data-target="#modal4"></a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+                    </div>
+        </section>
+
+
+
+        <section id="contato">
+            <div class="container">
+                <div class="row justify-content-lg-center">
+                    <div class="col col-5 text-justify">
+                        <p>a divermidia participa da construção de autoridade e reputação das marcas. oferecemos
+                            soluções
+                            inovadoras, sempre com agilidade na execução e estratégias balizadas pela união de anos de
+                            experiência no mercado publicitário à alta capacidade de abraçar o melhor das novas
+                            tecnologias
+                            . atendemos os nosso clientes de forma personalizafa, trabalhando em conjunto para aumentar
+                            a
+                            performance e atender todas as necessidades. conheça um pouco dos serviços da ego
+                            comunicação.
+                        </p>
+                    </div>
+                    <div class="col col-5 text-center">
+                        <img src="images/ideias.png">
+                    </div>
+
+                    <div class="container">
+                        <div class="footer-img">
+                            <ul>
+                                <li><img style="padding-bottom: 30px;" src="images/ico-criativo.png"></li>
+                                <li><img src="images/ico-producao-video.png"></li>
+                                <li><img style="padding-bottom: 10px;" src="images/ico-mk-digital.png"></li>
+                                <li><img style="padding-bottom: 7px;" src="images/ico-sites.png"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="container col-6">
+                <form class="main-form">
+                    <div>
+                        <p><strong>Solicite um orçamento</strong></p>
+                        <input type="text" class="form-divm" placeholder="Nome:" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                        <input type="tel" class="form-divm" placeholder="Telefone:" id="exampleInputPassword1">
+                    </div>
+
+                    <div>
+                        <textarea placeholder="Mensagem:"></textarea>
+                    </div>
+                    <div class="botao">
+                        <p>
+                            <button type="submit" class="btn btn-primary btn-enviar">Enviar</button>
+                        </p>
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="navbar-fixed-bottom">
+        <div>
+            <p>Divermidia 2021 | Todos os direitos reservados | (11) 94780-7349 / email@divermidia.com.br</p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="resources/library/js/bootstrap.min.js"></script>
+    <script src="resources/library/owlcarousel/owl.carousel.min.js"></script>
+    <script src="resources/js/main.js"></script>
+
+    <script>
+        $('.loop').owlCarousel({
+            center: true,
+            items: 1,
+            loop: true,
+            margin: 0
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $(".btn-orcamento").on("click", function () {
+                $("#modalTeste").modal("show");
+            })
+
+        })
+    </script>
+
+</body>
+
+</html>
