@@ -1,3 +1,5 @@
+
+
 <section id="home">
     <div class="main-banner owl-carousel">
         <div class="item"><img src="<?=base_url('assets/img/banners/')?>/banner-fixo.png"></div>
@@ -114,12 +116,11 @@
 
                     <!-- Grid column -->
                     <div class="item col-lg-4 col-md-12 mb-4">
-                        <a>
+                        <a class="item-carousel" data-video="" data-img="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" data-saibamais="www.google.com">
                             <img class="img-fluid z-depth-1"
                                 src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt="video"
                                 data-toggle="modal" data-target="#modal1">
                         </a>
-
                     </div>
                     <!-- Grid column -->
 
@@ -206,3 +207,17 @@
     </div>
 
 </section>
+
+<div class="modal fade modal-lightbox" id="modal-lightbox-galery" aria-hidden="true" aria-labelledby="modal-lightbox-galery" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered animate-bottom">
+    <div class="modal-content">     
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn-link saiba-mais">SAIBA MAIS</a>
+        <button type="button" class="btn btn-link close" data-bs-dismiss="modal">FECHAR X</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,7 +3,7 @@ html, body{
     padding: 0;
 }
 
-a, p, text{
+a, p, text, button{
     font-family:noirpro-regularuploaded_file;
 }
 h2, h1{
@@ -394,3 +394,61 @@ footer p{
 .whats:hover {
     filter: brightness(110%);
 }
+
+.modal-lightbox .modal-content{
+ border-radius: 0;
+ border-radius: 0;
+ border: 8px solid #000;
+}
+
+.modal-lightbox .modal-footer{
+    display: block;
+    background: #000;
+    height: 30px;
+    padding: 0;
+    border-radius: 0;
+    border: 0;
+}
+.modal-lightbox .modal-footer a.saiba-mais,
+.modal-lightbox .modal-footer button.close
+{
+    font-family: 'noirpro-semibolduploaded_file';
+    color: #00ABE4;
+}
+.modal-lightbox .modal-footer a.saiba-mais{
+    float: left;
+    margin-left: 15px;
+}
+
+.modal-lightbox .modal-footer button.close{
+    float: right;
+    padding: 0;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.modal-lightbox .modal-body {
+    padding: 0;
+    background: #000;
+}
+
+.modal-lightbox .modal-body img{
+    width: 100%;
+}
+
+.animate-bottom {
+    position: relative;
+    animation: animatebottom 0.4s;
+  }
+  
+  @keyframes animatebottom {
+    from {
+      bottom: -300px;
+      opacity: 0;
+    }
+  
+    to {
+      bottom: 0;
+      opacity: 1;
+    }
+  }

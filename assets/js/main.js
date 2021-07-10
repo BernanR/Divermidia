@@ -1,6 +1,19 @@
 
  $(document).ready(()=>{
 
+  $("a.item-carousel").on("click", function() {
+    var item = $(this);
+    var src = item.data("img");
+
+    var image = "<img src=\"" + src + "\">";
+
+    $("#modal-lightbox-galery").find(".modal-body").html(image);
+    $("#modal-lightbox-galery").modal("show");
+
+  })
+
+  //$("#modal-lightbox-galery").modal("show");
+
   $(".main-banner").owlCarousel({
       navigation: true,
       items: 1,
