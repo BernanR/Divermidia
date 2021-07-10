@@ -9,8 +9,8 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <!-- Le styles -->
-        <link rel="stylesheet" href="<?=base_url('assets/css/')?>/bootstrap.min.css">
+        <!-- bootstrap 5 -->
+        <link rel="stylesheet" href="<?=base_url('assets/lib/bootstrap/css/')?>bootstrap.min.css">
 
         <!-- <link href="assets/css/jquery-ui.css" rel="stylesheet"> -->
         <link href="assets/css/admin.css?v=1" rel="stylesheet">

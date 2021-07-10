@@ -9,10 +9,10 @@
         <meta name="author" content="">
 
         <!-- Le styles -->        
-        <link rel="stylesheet" href="<?=base_url('assets/css/')?>/bootstrap.min.css">
-        <link rel="stylesheet" href="<?=base_url('assets/css/')?>/dist/admin.min.css">
+        <!-- bootstrap 5 -->
+        <link rel="stylesheet" href="<?=base_url('assets/lib/bootstrap/css/')?>bootstrap.min.css">
+        <link rel="stylesheet" href="<?=base_url('assets/css/')?>dist/admin.min.css">
         <!-- <link rel="stylesheet" href="<?=base_url('assets/css/')?>/admin.css?v=1"> -->
-
 
        <!--  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
         <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
