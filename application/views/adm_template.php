@@ -7,7 +7,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
+<?php 
 
+phpinfo();
+?>
         <!-- Le styles -->        
         <!-- bootstrap 5 -->
         <link rel="stylesheet" href="<?=base_url('assets/lib/bootstrap/css/')?>bootstrap.min.css">

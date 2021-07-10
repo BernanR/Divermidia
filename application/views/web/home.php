@@ -209,7 +209,7 @@
 </section>
 
 <div class="modal fade modal-lightbox" id="modal-lightbox-galery" aria-hidden="true" aria-labelledby="modal-lightbox-galery" tabindex="-1">
-  <div class="modal-dialog modal-lg modal-dialog-centered animate-bottom">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">     
       <div class="modal-body">
         
