@@ -1,5 +1,6 @@
 # vs code
 workspace-divermidia.code-workspace
+divermidia-workspace
 # secret data about application
 ./config
 ./assets/uploads/*

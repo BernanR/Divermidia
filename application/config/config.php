@@ -29,14 +29,16 @@ $config['modules_locations'] = array(
 | a PHP script and you can easily do that on your own.
 |
 */
+
 if($_SERVER['SERVER_NAME'] == 'divermidia.local'){	
 	$config['base_url'] = 'http://divermidia.local/';
 
 }elseif($_SERVER['SERVER_NAME'] == 'divermidia.local') {
 	$config['base_url'] = 'http://' . $_SERVER['SERVER_NAME'] . '/';
+} elseif($_SERVER['SERVER_NAME'] == 'localhost') {
+	$config['base_url'] = 'http://' . $_SERVER['SERVER_NAME'] . '/';
 } else{
-	$config['base_url'] = 'https://'.$_SERVER['SERVER_NAME']. '/';
-	
+	$config['base_url'] = 'https://'.$_SERVER['SERVER_NAME']. '/';	
 }
 
 
