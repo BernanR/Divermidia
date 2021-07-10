@@ -9,7 +9,7 @@
                 <a class="nav-link" href="#"><strong>Home</strong></a>
                 <a class="nav-link" href="#" onClick="$('#agencia').animatescroll({scrollSpeed:3000,easing:'easeOutElastic',padding:80});"><strong>Agência</strong></a>
                 <a class="nav-link" href="#" onClick="$('#portifolio').animatescroll({scrollSpeed:3000,easing:'easeOutElastic',padding:80});"><strong>Portifólio</strong></a>
-                <a class="nav-link" href="contato.html"><strong>Contato</strong></a>
+                <a class="nav-link" href="<?=base_url('contato')?>"><strong>Contato</strong></a>
                 <a class="nav-link" href="#"><strong>Blog</strong></a>
                 <?php foreach ($menus as $menu) :  ?>
                     <li class="nav-item dropdown">
