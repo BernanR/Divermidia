@@ -102,54 +102,6 @@
 
         <script type="text/javascript" src="<?= base_url('assets/lib/owl-carousel/docs/assets/owlcarousel/owl.carousel.min.js')?>"></script>
         <script src="<?=base_url('assets/lib/lightbox/js/lightbox.min.js')?>"></script>
-        
-        <script>
-            $(document).ready(()=>{
-                // lightbox.option({
-                //     'resizeDuration': 200,
-                //     'maxWidth':500,
-                //     'maxHeight':500,
-                //     'wrapAroud':false,
-                //     'disableScrolling':false,
-                //     'alwaysShowNavOnTouchDevices':false
-                // });
-
-                // $('#owl-carousel-pages').owlCarousel({
-                //     loop:true,
-                //     margin:10,
-                //     nav:false,
-                //     dots:false,
-                //     autoplayTimeout: 5000,
-                //     autoplay: true,
-                //     responsive:{
-                //         0:{
-                //             items:2,
-                //         },
-                //         1000:{
-                //             items:5
-                //         },
-                //     }
-                // });
-
-                $(".main-banner").owlCarousel({
-                    navigation: true,
-                    items: 1,
-                    loop: true,
-                    autoplay: true,
-                    autoplayTimeout: 7000,
-                    nav: true,
-                    navText: ["<i class=\"icon ion-ios-arrow-back\"></i>", "<i class=\"icon ion-ios-arrow-forward\"></i>"],
-                    singleItem: true
-                });
-
-                $('.pl-carousel').owlCarousel({
-                    center: true,
-                    items: 1,
-                    loop: true,
-                    margin: 0
-                });
-            });
-        </script>
-        
+        <script src="<?=base_url('assets/js')?>/main.js"></script>       
     </body>
 </html>

@@ -1,4 +1,24 @@
 
+ $(document).ready(()=>{
+
+  $(".main-banner").owlCarousel({
+      navigation: true,
+      items: 1,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 7000,
+      nav: true,
+      navText: ["<i class=\"icon ion-ios-arrow-back\"></i>", "<i class=\"icon ion-ios-arrow-forward\"></i>"],
+      singleItem: true
+  });
+
+  $('.pl-carousel').owlCarousel({
+      center: true,
+      items: 1,
+      loop: true,
+      margin: 0
+  });
+});
 
 $('#owl-produtos').owlCarousel({
   margin: 10,
