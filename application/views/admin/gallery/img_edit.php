@@ -49,11 +49,15 @@
 								<?=$this->image_handler->thumb('./assets/img/gallery/', $v->file)?>
 							</div>
 							<div class="col">
-								<label>Título</label>
+								<label>Título:</label>
 								<input class="form-control" type="text" name="medias[<?=explode(".", $v->file)[0]?>][title]" value="<?=$v->title?>">
 							</div>
 							<div class="col">
-								<label>Ordem</label>
+								<label>Link:</label>
+								<input class="form-control" type="text" name="medias[<?=explode(".", $v->file)[0]?>][link]" value="<?=$v->link?>">
+							</div>
+							<div class="col">
+								<label>Ordem:</label>
 								<input class="form-control" style="width:50%;" type="number" name="medias[<?=explode(".", $v->file)[0]?>][ordem]" value="<?=(isset($v->ordem)) ? $v->ordem : ''?>">
 							</div>
 							<div class="col">

@@ -7,10 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
-<?php 
 
-phpinfo();
-?>
         <!-- Le styles -->        
         <!-- bootstrap 5 -->
         <link rel="stylesheet" href="<?=base_url('assets/lib/bootstrap/css/')?>bootstrap.min.css">
@@ -25,9 +22,8 @@ phpinfo();
         <link href="assets/lib/upload/css/jquery.filer.css" rel="stylesheet">
         <link href="assets/lib/upload/css/jquery.filer-dragdropbox-theme.css" rel="stylesheet">
         <!-- upload files -->
-        <script src="assets/js/jquery.min.js"></script>
-        
-       
+        <script src="assets/js/admin/jquery2.min.js"></script>
+        <script src="assets/js/admin/main.js"></script>
         <script src="assets/lib/upload/js/jquery.filer.min.js"></script>
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -111,11 +107,11 @@ phpinfo();
         <input type="hidden" value="<?=base_url()?>" id="base_url">
     
         <script src="<?=base_url('assets/js/')?>/popper.min.js"></script>
-        <script src="<?=base_url('assets/js/')?>/bootstrap.min.js"></script>     
+        <!-- <script src="<?=base_url('assets/js/')?>/bootstrap.min.js"></script>      -->
         <script src="assets/lib/jquery.mask.min.js"></script>
-        <script src="assets/js/main.js?v=2"></script>
+        <!-- <script src="assets/js/main.js?v=2"></script> -->
 
-        
+       
         <!-- <script src="assets/lib/fileuploader-trial/dist/jquery.fileuploader.min.js" type="text/javascript"></script>
         <script src="assets/lib/fileuploader-trial/custom.js" type="text/javascript"></script> -->
 

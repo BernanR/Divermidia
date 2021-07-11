@@ -40,10 +40,11 @@
 
     </div>
 </nav>
+
 <div class="container">
     <div class="redes-sociais">
         <ul>
-            <li><a class="header-nav-icon" href="<?= $config->link_youtube ?>" target="_blank" title="YouTube"><img src="<?=base_url('assets/img/icons/')?>ico-youtube.png"></a></li>
+            <li><a class="header-nav-icon" href="<?= $config->link_yt ?>" target="_blank" title="YouTube"><img src="<?=base_url('assets/img/icons/')?>ico-youtube.png"></a></li>
             <li><a class="header-nav-icon" href="<?= $config->link_instagram ?>" target="_blank" title="Instagram"><img src="<?=base_url('assets/img/icons/')?>ico-instagran.png"></a></li>
             <li><a class="header-nav-icon" href="<?= $config->link_facebook ?>" target="_blank" title="Pinteterest"><img src="<?=base_url('assets/img/icons/')?>ico-pinteterest.png"></a></li>
             <li><a class="header-nav-icon" href="<?= $config->link_facebook ?>" target="_blank" title="Facebook"><img src="<?=base_url('assets/img/icons/')?>ico-facebook.png"></a></li>

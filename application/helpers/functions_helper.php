@@ -499,31 +499,29 @@ function removeBar($str){
     return str_replace('/', '',$str);
 }
 
-function getGallery($id) {
+function getGallery($id, $gerarHtml=true) {
     $CI =& get_instance();
     $CI->load->model("Gallery_model","Gallery");
 
     $data = $CI->Gallery->get(['id' => $id]);
-
     if ($data->qtd == 0) return false;
 
     $files = json_decode($data->data_result[0]->json);
+
     $config = [
         'lightbox' => $data->data_result[0]->lightbox
     ];
     
     //ordenando array
     $files = orderGalleryJson($files);
-
-    if ($data->data_result[0]->carousel == 1) return getCarouselGallery($files, $config);
-
+    if ($data->data_result[0]->carousel == 1 && $gerarHtml) return getCarouselGallery($files, $config);
     return $files;
 }
 
 
 function getCarouselGallery($files, $config) {
     $html = "<div id=\"owl-carousel-pages\" class=\"owl-carousel carousel owl-theme\">";
-   
+
     foreach ($files as $file) {
         //$html .= "<li class=\"item\">";
         if ( $config['lightbox']) {
@@ -537,8 +535,7 @@ function getCarouselGallery($files, $config) {
         if ( $config['lightbox']) $html .= "</a>";
         //$html .= "</li>";
     } 
-    $html .= "</div>"; 
-
+    $html .= "</div>";
     return $html;
 
 }
@@ -563,7 +560,7 @@ function orderGalleryJson($images){
         if ($image['ordem'] == 1000) $image['ordem'] = '';
         $ordem[] = (object) $image;
     }
-    
+ 
     return $ordem;
 }
 

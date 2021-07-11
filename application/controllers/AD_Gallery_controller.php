@@ -241,14 +241,14 @@ class AD_Gallery_controller extends CI_Controller {
         $data['updated_dt'] = date('Y-m-d H:i:s'); 
         $data['lightbox'] = ($this->input->post('lightbox')) ? 1: 0;
         $data['carousel'] = ($this->input->post('carousel')) ? 1: 0;
-        
+
         $id = $this->input->post('id');
-        
+
         if ($this->input->post('medias')) {
             $type = $this->input->post('type');
             $medias = $type == 1 ? $this->tratamento_img($this->input->post('medias'), $id) : $this->tratamento_videos($this->input->post('medias'), $id);
             $data['json'] = json_encode($medias);
-        }               
+        }
 
         if ($this->form_validation->run()) {  
             if($this->Gallery->update($data, $id)) set_msg('msgOk', 'Mídia alterada com sucesso!', 'sucess');
@@ -291,6 +291,7 @@ class AD_Gallery_controller extends CI_Controller {
                 if ($file == $key) {
                     $media->title = $img['title'];
                     $media->ordem = $img['ordem'];
+                    $media->link = $img['link'];
                     array_push($orders, $media->ordem);
                 }
             }
@@ -319,6 +320,7 @@ class AD_Gallery_controller extends CI_Controller {
         if ($upload['status']) {
             unset($upload['status']);
             $upload['title'] = '';
+            $upload['link'] = '';
             $upload['key'] = explode(".", $upload['file'])[0];
 
             array_push($medias, $upload);

@@ -1,10 +1,27 @@
 
+<?php 
+    $galeria = getGallery(5, false);
+    $video = getGallery(6, false);
+    $fixBanner = getGallery(7, false);
+    $fixBanner = $fixBanner[count($fixBanner) - 1];
+?>
+       
 
 <section id="home">
     <div class="main-banner owl-carousel">
-        <div class="item"><img src="<?=base_url('assets/img/banners/')?>/banner-fixo.png"></div>
-        <div class="item"><img src="<?=base_url('assets/img/banners/')?>/banner-fixo.png"></div>
-        <div class="item"><img src="<?=base_url('assets/img/banners/')?>/banner-fixo.png"></div>
+       
+        <?php foreach ($galeria as $item) :  ?>
+            <div class="item">
+                <?php if ( $item->link ):  ?>
+                    <a href="<?=$item->link?>">
+                <?php endif ?>
+                <img src="<?=base_url('assets/img/gallery/')?><?=$item->file?>">
+                <?php if ( $item->link ):  ?>
+                    </a>
+                <?php endif ?>
+            </div>
+        <?php endforeach ?>
+
     </div>
     <div class="container">
         <div class="row">
@@ -47,7 +64,7 @@
                 </div>
             </div>
             <div class="col-6 banner-fixo">
-                <img class="animate__animated animate__backInDown" src="<?=base_url('assets/img/banners/')?>banner-2.png">
+                <img alt="<?=$fixBanner->title?>" title="<?=$fixBanner->title?>" class="animate__animated animate__backInDown" src="<?=base_url('assets/img/gallery/')?><?=$fixBanner->file?>">
             </div>
         </div>
     </div>
@@ -57,23 +74,16 @@
     <div class="container">
         <div class="row justify-content-lg-center">
             <div class="col col-8 text-center">
-                <p>AGÊNCIA DIVERMIDIA</p>
-                <p>
-                    HÁ 20 ANOS FORNECENDO SOLUÇÕES EM PUBLICIDADE E MARKETING COM EXCELÊNCIA, SEMPRE BUSCANDO A
-                    SATISFAÇÃO DOS CLIENTES...
-                      <!-- ISSO DEVE SER UM LINK TAG <a> pois vai jogar para outra página -->
-                    
-                    <p class="text-center">
-                        <a href="" class="btn btn-primary btn-saiba justify-content-lg-center">
-                        Saiba Mais
-                        </a>
-                    </p>
-                    
-                </p>           
+                <?=$texto?>
+                <p class="text-center">
+                <a href="<?=base_url($pageList['agencia']->slug)?>" class="btn btn-primary btn-saiba justify-content-lg-center">
+                Saiba Mais
+                </a>
+                </p>
             </div>
             <div class="col col-8 text-center">
                 <div class="video-agencia">
-                    <iframe src="https://www.youtube.com/embed/xBkMoCy5PhQ" title="YouTube video player"
+                    <iframe src="https://www.youtube.com/embed/<?=$video[0]->url?>" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>

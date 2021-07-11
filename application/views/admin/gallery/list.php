@@ -44,10 +44,20 @@
                         <td><?= $gallery->type == 1 ? 'Imagens' : 'Vídeos' ?></td>
                         <td><?= $gallery->description ?></td>
                         <td><?= formata_data($gallery->updated_dt,2) ?></td>
-                        <td>              
+                        <td>
+                            <?php 
+                                $disabled = false;
+                                if($gallery->id == 5) {
+                                    $disabled = true;
+                                }
+                            ?>
                             <!-- <a class="btn btn-mini btn-light" title="Ver" target="_blank" href="<?= base_url("/assets/img/banners/"); ?>"><i class="fa fa-eye"></i></a> -->
                             <a class="btn btn-mini btn-primary" title="Editar" href="admin/gallery/edit/<?= $gallery->id; ?>"><i class="fa fa-pencil"></i></a>  
-                            <a title="Excluir" class="btn btn-mini btn-danger" href="admin/gallery/delete/<?= $gallery->id; ?>" onclick="javascript:if(!confirm('Deseja realmente excluir esta Galeria? Ao excluir não será mais exibido no sistema.')){return false;}"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                            <?php if ($disabled):  ?>
+                                <button disabled class="btn btn-mini btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                            <?php else : ?>
+                                <a title="Excluir" class="btn btn-mini btn-danger" href="admin/gallery/delete/<?= $gallery->id; ?>" onclick="javascript:if(!confirm('Deseja realmente excluir esta Galeria? Ao excluir não será mais exibido no sistema.')){return false;}"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                            <?php endif ?>
                         </td>
                     </tr>
                 <?php endforeach; ?>

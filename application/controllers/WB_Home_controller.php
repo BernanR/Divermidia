@@ -37,12 +37,11 @@ class WB_Home_controller extends CI_Controller
         $this->load->model("Media_model","Media");    
         $this->load->model('Page_model', 'Page');
 
-        $page = $this->Page->get(['id' => 4 ])->data_result->content;
-       
+        $page['home'] = $this->Page->get(['id' => 4 ])->data_result->content;
+        $page['agencia'] = $this->Page->get(['id' => 6 ])->data_result;
         $data['title'] =  'Home';
-        $data['texto'] =  $page;
-        $data['mCustomScrollbar'] = true;
-
+        $data['texto'] =  $page['home'];
+        $data['pageList'] = $page;
         load_module(
             $this->module . 'home', 
             $data, 

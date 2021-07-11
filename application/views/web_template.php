@@ -9,11 +9,11 @@
     $css_v = '1.3';
     $js_v = '1.5';   
 
-    $footer_customers = getCustomersLogo();
+    //$footer_customers = getCustomersLogo();
    
-    $media = (Object) array(//se precisar de + mídias, setar aqui!!
-        'footer_customers' => $footer_customers
-    );
+    // $media = (Object) array(//se precisar de + mídias, setar aqui!!
+    //     'footer_customers' => $footer_customers
+    // );
 
 ?>
 
@@ -66,7 +66,7 @@
 
     <body>
         <header>
-            <?php $this->load->view('web/_navbar', [ 'menus'=> $menus, 'config'=> $config, 'media' => $media]) ?> 
+            <?php $this->load->view('web/_navbar', [ 'menus'=> $menus, 'config'=> $config]) ?> 
         </header>
         
         <?php if (isset($banners['desktop']) || isset($banners['mobile'])):  ?>
