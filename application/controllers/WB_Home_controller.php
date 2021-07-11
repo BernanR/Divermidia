@@ -39,6 +39,7 @@ class WB_Home_controller extends CI_Controller
 
         $page['home'] = $this->Page->get(['id' => 4 ])->data_result->content;
         $page['agencia'] = $this->Page->get(['id' => 6 ])->data_result;
+        $page['criative'] = $this->Page->get(['id' => 7 ])->data_result;
         $data['title'] =  'Home';
         $data['texto'] =  $page['home'];
         $data['pageList'] = $page;

@@ -65,7 +65,7 @@
     </head>
 
     <body>
-        <header>
+        <header class="h-interno">
             <?php $this->load->view('web/_navbar', [ 'menus'=> $menus, 'config'=> $config]) ?> 
         </header>
         

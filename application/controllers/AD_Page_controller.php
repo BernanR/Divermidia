@@ -247,7 +247,7 @@ class AD_Page_controller extends CI_Controller {
             'title' => $_FILES['upload']['name'],
         ];
        
-        $file = $this->Media->uploadFile('upload', './assets/uploads', null, $datasave);        
+        $file = $this->Media->uploadFile('upload', './assets/img/uploads', null, $datasave);        
 
         $upload = $this->do_upload();
 

@@ -41,30 +41,8 @@
                     <a href="" class="btn btn-primary btn-saiba">Saiba Mais</a>
                 </p>
 
-                <div>
-                            <form class="main-form">
-                                <div class="row">
-                                    <p><strong>Solicite um orçamento</strong></p>
-                                    <div class="col-6">
-                                        <input type="text" class="form-divm" placeholder="Nome:"
-                                            id="exampleInputEmail1" aria-describedby="emailHelp">
-                                    </div>
-                                    <div class="col-6">
-                                        <input type="tel" class="form-divm" placeholder="Telefone:"
-                                            id="exampleInputPassword1">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <textarea placeholder="Mensagem:"></textarea>
-                                </div>
-                                <div class="botao">
-                                    <p>
-                                        <button type="submit" class="btn btn-primary btn-enviar">Enviar</button>
-                                    </p>
-                                </div>
-            
-                            </form>
-                        </div>
+                <?php $this->load->view('web/_form_main') ?>
+
             </div>
             <div class="col-6 banner-fixo">
                 <img alt="<?=$fixBanner->title?>" title="<?=$fixBanner->title?>" class="animate__animated animate__backInDown" src="<?=base_url('assets/img/gallery/')?><?=$fixBanner->file?>">
@@ -86,7 +64,7 @@
             </div>
             <div class="col col-8 text-center">
                 <div class="video-agencia">
-                    <iframe src="https://www.youtube.com/embed/<?=$video[0]->url?>" title="YouTube video player"
+                    <iframe src="https://www.youtube.com/embed/<?=$video[0]->url?>" title="<?=$video[0]->title?>"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
@@ -98,69 +76,9 @@
     </div>
 </section>
 
-<section id="portifolio">
-    <div class="white-bg">
-        <h2 class="text-center title">PORTIFÓLIO</h2>
-    </div>
 
-    <div class="row justify-content-lg-center mg-0">
-        <div class="jobs-recentes">
-            <div class="row justify-content-lg-center">
-                <div class="col col-3 b-r">
-                    <h5 class="animate__animated animate__backInRight">JOBS RECENTES</h5>
-                </div>
-                <div class="col col-6 right-text jobs-text">
-                    <p class="animate__animated animate__backInLeft animate__delay-1s">
-                        CRIATIVIDADE E TÉCNICA NA CRIAÇÃO DA SUA IDENTIDADE VISUAL ATRAIRÁ AINDA<br> MAIS SEUS
-                        CLIENTES
-                        EM
-                        POTENCIAL, POIS A SUA MARCA SE COMUNICARÁ COM O SEU PÚBLICO
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+<?php $this->load->view('web/jobs_recentes') ?>
 
-    <div class="row">
-        <div class="columns">
-            <div class="pl-carousel owl-carousel">
-                <!-- Grid row -->
-                <div class="row">
-
-                    <!-- Grid column -->
-                    <div class="item col-lg-4 col-md-12 mb-4">
-                        <a class="item-carousel" data-video="" data-img="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" data-saibamais="www.google.com">
-                            <img class="img-fluid z-depth-1"
-                                src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt="video"
-                                data-toggle="modal" data-target="#modal1">
-                        </a>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="item col-lg-4 col-md-6 mb-4">
-
-                        <a><img class="img-fluid z-depth-1"
-                                src="https://mdbootstrap.com/img/screens/yt/screen-video-2.jpg" alt="video"
-                                data-toggle="modal" data-target="#modal6">
-                        </a>
-
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="item col-lg-4 col-md-6 mb-4">
-                        <a><img class="img-fluid z-depth-1"
-                                src="https://mdbootstrap.com/img/screens/yt/screen-video-3.jpg" alt="video"
-                                data-toggle="modal" data-target="#modal4"></a>
-
-                    </div>
-                    <!-- Grid column -->
-
-                </div>
-                <!-- Grid row -->
-            </div>
-</section>
 
 <section id="contato">
     <div class="container">
@@ -184,7 +102,12 @@
             <div class="container">
                 <div class="footer-img">
                     <ul>
-                        <li><img style="padding-bottom: 30px;" src="<?=base_url('assets/img/')?>/ico-criativo.png"></li>
+                        <li>
+                            <a href="<?=base_url($pageList['criative']->slug)?>">
+                                <img style="padding-bottom: 30px;" src="<?=base_url('assets/img/')?>/ico-criativo.png">                       
+                            </a>
+                        </li>
+                        
                         <li><img src="<?=base_url('assets/img/')?>/ico-producao-video.png"></li>
                         <li><img style="padding-bottom: 10px;" src="<?=base_url('assets/img/')?>/ico-mk-digital.png"></li>
                         <li><img style="padding-bottom: 7px;" src="<?=base_url('assets/img/')?>/ico-sites.png"></li>
@@ -199,26 +122,8 @@
 <section>
 
     <div class="container col-6">
-        <form class="main-form">
-            <div>
-                <p><strong>Solicite um orçamento</strong></p>
-                <input type="text" class="form-divm" placeholder="Nome:" id="exampleInputEmail1"
-                    aria-describedby="emailHelp">
-                <input type="tel" class="form-divm" placeholder="Telefone:" id="exampleInputPassword1">
-            </div>
-
-            <div>
-                <textarea placeholder="Mensagem:"></textarea>
-            </div>
-            <div class="botao">
-                <p>
-                    <button type="submit" class="btn btn-primary btn-enviar">Enviar</button>
-                </p>
-            </div>
-
-        </form>
+        <?php $this->load->view('web/_form_main') ?>
     </div>
-
 </section>
 
 <div class="modal fade modal-lightbox" id="modal-lightbox-galery" aria-hidden="true" aria-labelledby="modal-lightbox-galery" tabindex="-1">

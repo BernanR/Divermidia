@@ -10,8 +10,8 @@
 
         <!-- Le styles -->        
         <!-- bootstrap 5 -->
-        <link rel="stylesheet" href="<?=base_url('assets/lib/bootstrap/css/')?>bootstrap.min.css">
-        <link rel="stylesheet" href="<?=base_url('assets/css/')?>dist/admin.min.css">
+        <link rel="stylesheet" href="<?=base_url('assets/css/admin/')?>bootstrap.min.css">
+        <link rel="stylesheet" href="<?=base_url('assets/css/admin/')?>admin.min.css">
         <!-- <link rel="stylesheet" href="<?=base_url('assets/css/')?>/admin.css?v=1"> -->
 
        <!--  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
@@ -22,8 +22,7 @@
         <link href="assets/lib/upload/css/jquery.filer.css" rel="stylesheet">
         <link href="assets/lib/upload/css/jquery.filer-dragdropbox-theme.css" rel="stylesheet">
         <!-- upload files -->
-        <script src="assets/js/admin/jquery2.min.js"></script>
-        <script src="assets/js/admin/main.js"></script>
+        <script src="assets/js/admin/jquery2.min.js"></script>        
         <script src="assets/lib/upload/js/jquery.filer.min.js"></script>
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -107,8 +106,8 @@
         <input type="hidden" value="<?=base_url()?>" id="base_url">
     
         <script src="<?=base_url('assets/js/')?>/popper.min.js"></script>
-        <!-- <script src="<?=base_url('assets/js/')?>/bootstrap.min.js"></script>      -->
-        <script src="assets/lib/jquery.mask.min.js"></script>
+        <script src="<?=base_url('assets/js/admin/')?>bootstrap.min.js"></script>
+        <script src="assets/js/admin/main.js"></script>
         <!-- <script src="assets/js/main.js?v=2"></script> -->
 
        
