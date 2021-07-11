@@ -42,26 +42,29 @@
                 </p>
 
                 <div>
-                    <form class="main-form">
-                        <div>
-                            <p><strong>Solicite um orçamento</strong></p>
-                            <input type="text" class="form-divm" placeholder="Nome:" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-                            <input type="tel" class="form-divm" placeholder="Telefone:"
-                                id="exampleInputPassword1">
+                            <form class="main-form">
+                                <div class="row">
+                                    <p><strong>Solicite um orçamento</strong></p>
+                                    <div class="col-6">
+                                        <input type="text" class="form-divm" placeholder="Nome:"
+                                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="tel" class="form-divm" placeholder="Telefone:"
+                                            id="exampleInputPassword1">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <textarea placeholder="Mensagem:"></textarea>
+                                </div>
+                                <div class="botao">
+                                    <p>
+                                        <button type="submit" class="btn btn-primary btn-enviar">Enviar</button>
+                                    </p>
+                                </div>
+            
+                            </form>
                         </div>
-
-                        <div>
-                            <textarea placeholder="Mensagem:"></textarea>
-                        </div>
-                        <div class="botao">
-                            <p>
-                                <button type="submit" class="btn btn-primary btn-enviar">Enviar</button>
-                            </p>
-                        </div>
-
-                    </form>
-                </div>
             </div>
             <div class="col-6 banner-fixo">
                 <img alt="<?=$fixBanner->title?>" title="<?=$fixBanner->title?>" class="animate__animated animate__backInDown" src="<?=base_url('assets/img/gallery/')?><?=$fixBanner->file?>">
