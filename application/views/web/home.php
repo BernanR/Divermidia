@@ -19,9 +19,9 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 col-sm-12">
 
-                <div class="main-chamada ">
+                <div class="main-chamada">
                     <?=$pageList['home']->content?>
                 </div>
 
@@ -38,7 +38,7 @@
 <section id="agencia">
     <div class="container">
         <div class="row justify-content-lg-center">
-            <div class="col col-8 text-center resume">
+            <div class="col col-sm-12 col-8 text-center resume">
                 <p><?=$pageList['agencia']->title?></p>
                 <p><?=$pageList['agencia']->resume?></p>
                 <p class="text-center">
@@ -71,7 +71,7 @@
 <section id="contato">
     <div class="container">
         <div class="row justify-content-lg-center">
-            <div class="col col-5 text-justify">
+            <div class="col col-sm-12 col-5 text-justify">
                 <p>a divermidia participa da construção de autoridade e reputação das marcas. oferecemos
                     soluções
                     inovadoras, sempre com agilidade na execução e estratégias balizadas pela união de anos de
@@ -83,7 +83,7 @@
                     comunicação.
                 </p>
             </div>
-            <div class="col col-5 text-center">
+            <div class="col col-sm-12 col-5 text-center">
                 <img src="<?=base_url('assets/img/')?>/ideias.png">
             </div>
 
