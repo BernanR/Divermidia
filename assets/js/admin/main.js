@@ -87,4 +87,4 @@ function changeEmbedSource(videoID, targetIframeID) {
   targetIframe.setAttribute("src", newSrc);
 }
 
-load_media_files()
+load_media_files(

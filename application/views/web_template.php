@@ -15,6 +15,8 @@
     //     'footer_customers' => $footer_customers
     // );
 
+    if (!isset($into_page)) $into_page = true;
+    $head_into_class = ($into_page) ? 'hd-into' : '';
 ?>
 
 
@@ -65,8 +67,9 @@
     </head>
 
     <body>
-        <header class="h-interno">
-            <?php $this->load->view('web/_navbar', [ 'menus'=> $menus, 'config'=> $config]) ?> 
+
+        <header class="<?=$head_into_class?>">
+            <?php $this->load->view('web/_navbar', [ 'menus'=> $menus, 'config'=> $config, 'into_page' => $into_page]) ?> 
         </header>
         
         <?php if (isset($banners['desktop']) || isset($banners['mobile'])):  ?>

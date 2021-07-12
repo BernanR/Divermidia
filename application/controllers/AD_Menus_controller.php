@@ -197,7 +197,7 @@ class AD_Menus_controller extends CI_Controller {
 
         if ($this->form_validation->run()) {
 
-            $post = (object) $this->input->post();            
+            $post = (object) $this->input->post();           
             $id = $this->input->post('id');
             $upate = $this->Menus->update($post, $id);
 

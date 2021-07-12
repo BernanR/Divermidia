@@ -43,6 +43,7 @@ class WB_Home_controller extends CI_Controller
         $data['title'] =  'Home';
         $data['texto'] =  $page['home'];
         $data['pageList'] = $page;
+        $data['into_page'] = false;
         load_module(
             $this->module . 'home', 
             $data, 

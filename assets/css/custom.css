@@ -4,7 +4,7 @@ html, body{
 }
 
 a, p, text, button{
-    font-family:noirpro-regularuploaded_file;
+    font-family:'noirpro-lightuploaded_file';
 }
 h2, h1{
     font-family: 'noirpro-semibolduploaded_file';
@@ -16,6 +16,26 @@ button, h5{
     clear: both;
 }
 
+h1{
+    color: #ee2b32;
+}
+
+h3 {
+    color: #ee2b32;
+}
+
+h1#page-title {
+    margin: 25px 0;
+}
+
+.hd-into {
+    border-bottom:45px solid #18a9e1;
+
+}
+
+main {
+    overflow: hidden;
+}
 .nav-bar{
     color: #687867;
     font-size: 16px;
@@ -23,6 +43,14 @@ button, h5{
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
+}
+
+.nav-bar ul {
+    list-style: none;
+}
+
+.nav-bar ul li {
+    display: inline-block;
 }
 
 .mg-0{
@@ -33,12 +61,12 @@ button, h5{
 }
 
 .btn-orcamento{
-    background: rgb(221, 6, 6);
     width: 190PX;
     height: 52px;
     border-radius: 26px;
     border: none;
     font-size: 17px;
+    padding: 15px;
 }
 
 .btn-orcamento:hover{
@@ -103,8 +131,12 @@ button, h5{
     z-index: 9;
 }
 
+.btn-enviar, .btn-saiba{
+    background: #ee2b32;
+}
+
 .btn-saiba{
-    background: rgb(221, 6, 6);
+   
     padding: 6px 20px;
     border-radius: 20px;
     border: none;
@@ -113,7 +145,16 @@ button, h5{
     margin: 30px auto;
 }
 
-.btn-saiba:hover{
+.color-red {
+color: #ee2b32!important;
+}
+
+.bg-red {
+    background-color: #ee2b32!important;
+    color:#fff;
+}
+
+.btn-saiba:hover, .btn-saiba:hover{
     background-color: red;
 }
 
@@ -121,10 +162,24 @@ form{
     text-align: center;
 }
 
+.main-form .text-form-title{
+    margin-bottom: 15px;
+}
 .main-form p{
     margin-bottom: 0;
 }
 
+.main-form textarea {
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.main-form .pl-dvm {
+    padding-left:0;
+}
+.main-form .pr-dvm {
+    padding-right:5px;
+}
 .botao{
     text-align: center;
     margin-bottom: 15px;
@@ -138,7 +193,6 @@ form p{
 }
 
 .btn-enviar{
-    background: rgb(221, 6, 6);
     width: 180PX;
     height: 47px;
     border-radius: 26px;
@@ -147,10 +201,6 @@ form p{
     text-align: center;
     margin: 0 auto;
     text-transform: uppercase;
-}
-
-.btn-enviar:hover{
-    background-color: red;
 }
 
 #home{
@@ -208,7 +258,7 @@ margin-bottom: 65px;
 .jobs-recentes{
     overflow: hidden;
     padding-top: 25px;
-    background-color: rgba(13, 155, 238, 0.849);
+    background-color: #18a9e1;
 }
 
 .jobs-recentes .info-job-center {
@@ -431,4 +481,79 @@ footer p{
 
 .modal-lightbox .modal-body img{
     width: 100%;
+}
+
+.two-colors {
+    margin: 60px 0;
+}
+.two-colors tr td{
+    position:relative;
+}
+.two-colors p, .two-colors h4, .two-colors h1, .two-colors h2, .two-colors h3 {
+    padding: 25px;
+}
+
+
+.two-colors tbody tr td:last-child{
+    background-color: #18a9e1;
+    color: #fff;
+}
+
+.two-colors tbody tr td:first-child img{
+    margin-right: 15px;
+}
+
+.two-colors tbody tr td:last-child:before{
+    content:"";
+    width: 5000%;
+    background-color: #18a9e1;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+}
+.two-colors tbody tr td {
+    background-color: #fff;
+    padding: 10px;
+}
+.two-colors tbody tr td:first-child:before{
+    content:"";
+    width: 5000%;
+    left:-5000px;
+    background-color: #e9f0f3;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+}
+
+#page_6 table p {
+    padding: 25px;
+}
+
+#page_6 iframe{
+    width: 100%;
+    height: 360px;
+}
+
+.download .file{
+    padding-top: 8px;
+}
+
+.download .file img {
+    width: 45px;
+}
+
+
+.download {
+    margin-top: 40px;
+}
+
+#pg-contato .google-maps{
+    margin: 60px 0;
+}
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1050px;
+    }
 }

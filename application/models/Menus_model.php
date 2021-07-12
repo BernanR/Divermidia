@@ -89,6 +89,7 @@ class Menus_model extends CI_Model {
     function getActivedMenus(){
         $sql = "SELECT 
             m.name, 
+            m.url, 
             m.id, 
             m.menu_id, 
             p.slug 

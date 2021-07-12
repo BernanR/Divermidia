@@ -27,10 +27,10 @@
         <div class="row">
             <div class="col-6">
 
-                <div class="main-chamada">
+                <div class="main-chamada ">
                     <p><strong>Sua loja tem potencial e você não sabia</strong></p>
 
-                    <h2>USE AS REDES SOCIAIS DO SEU SUPERMERCADO DE FORMA ESTRATÉGICA E ALCANCE 1000 PESSOAS COM
+                    <h2 class="color-red">USE AS REDES SOCIAIS DO SEU SUPERMERCADO DE FORMA ESTRATÉGICA E ALCANCE 1000 PESSOAS COM
                         *R$ 4,99/CAMPANHA.</h2>
 
                     <p>Conheça os 3 pilares de sucesso da Divermidia para sua loja ampliar o potencial de vendas
@@ -76,9 +76,12 @@
     </div>
 </section>
 
-
-<?php $this->load->view('web/jobs_recentes') ?>
-
+<section id="portifolio">
+    <div class="white-bg">
+        <h2 class="text-center title">PORTIFÓLIO</h2>
+    </div>
+    <?php $this->load->view('web/jobs_recentes') ?>
+</section>
 
 <section id="contato">
     <div class="container">
@@ -120,7 +123,6 @@
 </section>
 
 <section>
-
     <div class="container col-6">
         <?php $this->load->view('web/_form_main') ?>
     </div>
