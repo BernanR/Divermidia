@@ -59,11 +59,11 @@
 
         <!-- My Styles -->
         <link rel="stylesheet" href="<?=base_url("assets/css/custom.css?v=$css_v")?>">
-
         <!-- Fav and touch icons -->
-        <link rel="icon" href="<?=img_url('favicon_32x32.png')?>" sizes="32x32">
-        <link rel="icon" href="<?=img_url('favicon_192x192.png')?>" sizes="192x192">
-        <link rel="apple-touch-icon-precomposed" href="<?=img_url('favicon_180x180.png')?>">
+        <link rel="icon" href="<?=img_url('favicon_32x32.png')?>?v=1" sizes="32x32">
+        <link rel="icon" href="<?=img_url('favicon_192x192.png')?>?v=1" sizes="192x192">
+        <link rel="apple-touch-icon-precomposed" href="<?=img_url('favicon_180x180.png')?>?v=1">
+
     </head>
 
     <body>

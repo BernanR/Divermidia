@@ -4,23 +4,17 @@
     $video = getGallery(6, false);
     $fixBanner = getGallery(7, false);
     $fixBanner = $fixBanner[count($fixBanner) - 1];
+
+    $banners = json_decode($pageList['home']->banners);
 ?>
-       
+
 
 <section id="home">
-    <div class="main-banner owl-carousel">
+    <div class="main-banner">
        
-        <?php foreach ($galeria as $item) :  ?>
-            <div class="item">
-                <?php if ( $item->link ):  ?>
-                    <a href="<?=$item->link?>">
-                <?php endif ?>
-                <img src="<?=base_url('assets/img/gallery/')?><?=$item->file?>">
-                <?php if ( $item->link ):  ?>
-                    </a>
-                <?php endif ?>
-            </div>
-        <?php endforeach ?>
+        <?php if ($banners):  ?>
+        <div class="banner"><img src="<?=base_url('assets/img/banners/' . $banners->desktop )?>" alt=""></div>
+        <?php endif ?>
 
     </div>
     <div class="container">
@@ -28,18 +22,8 @@
             <div class="col-6">
 
                 <div class="main-chamada ">
-                    <p><strong>Sua loja tem potencial e você não sabia</strong></p>
-
-                    <h2 class="color-red">USE AS REDES SOCIAIS DO SEU SUPERMERCADO DE FORMA ESTRATÉGICA E ALCANCE 1000 PESSOAS COM
-                        *R$ 4,99/CAMPANHA.</h2>
-
-                    <p>Conheça os 3 pilares de sucesso da Divermidia para sua loja ampliar o potencial de vendas
-                        pelo menor custo-beneficio</p>
+                    <?=$pageList['home']->content?>
                 </div>
-
-                <p class="text-center">
-                    <a href="" class="btn btn-primary btn-saiba">Saiba Mais</a>
-                </p>
 
                 <?php $this->load->view('web/_form_main') ?>
 
@@ -54,8 +38,9 @@
 <section id="agencia">
     <div class="container">
         <div class="row justify-content-lg-center">
-            <div class="col col-8 text-center">
-                <?=$texto?>
+            <div class="col col-8 text-center resume">
+                <p><?=$pageList['agencia']->title?></p>
+                <p><?=$pageList['agencia']->resume?></p>
                 <p class="text-center">
                 <a href="<?=base_url($pageList['agencia']->slug)?>" class="btn btn-primary btn-saiba justify-content-lg-center">
                 Saiba Mais
@@ -107,13 +92,13 @@
                     <ul>
                         <li>
                             <a href="<?=base_url($pageList['criative']->slug)?>">
-                                <img style="padding-bottom: 30px;" src="<?=base_url('assets/img/')?>/ico-criativo.png">                       
+                                <img data-wow-offset="5"   class="animate__animated animate__backInLeft wow animate__delay-1s" style="padding-bottom: 30px;" src="<?=base_url('assets/img/')?>/ico-criativo.png">                       
                             </a>
                         </li>
                         
-                        <li><img src="<?=base_url('assets/img/')?>/ico-producao-video.png"></li>
-                        <li><img style="padding-bottom: 10px;" src="<?=base_url('assets/img/')?>/ico-mk-digital.png"></li>
-                        <li><img style="padding-bottom: 7px;" src="<?=base_url('assets/img/')?>/ico-sites.png"></li>
+                        <li ><img data-wow-offset="5"  class="animate__animated animate__backInLeft wow animate__delay-0.5s" src="<?=base_url('assets/img/')?>/ico-producao-video.png"></li>
+                        <li ><img data-wow-offset="5"  class="animate__animated animate__backInRight wow animate__delay-0.5s" style="padding-bottom: 10px;" src="<?=base_url('assets/img/')?>/ico-mk-digital.png"></li>
+                        <li ><img data-wow-offset="5"  class="animate__animated animate__backInRight wow animate__delay-1s" style="padding-bottom: 7px;" src="<?=base_url('assets/img/')?>/ico-sites.png"></li>
                     </ul>
                 </div>
             </div>
@@ -141,3 +126,14 @@
     </div>
   </div>
 </div>
+
+<script src="<?=base_url('assets/lib/wow/wow.min.js')?>"></script>   
+<script>
+new WOW({
+    boxClass:     'wow',      // default
+    animateClass: 'animate__animated', // default
+    offset:       0,          // default
+    mobile:       true,       // default
+    live:         true        // default
+}).init();
+</script>

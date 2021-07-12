@@ -12,7 +12,7 @@
         </div>
         <div class="botao">
             <p>
-                <button type="submit" class="btn btn-primary btn-enviar">Enviar</button>
+                <button type="submit" class="btn btn-primary btn-enviar pulse-animate">Enviar</button>
             </p>
         </div>  
     </div>

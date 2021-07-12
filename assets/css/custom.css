@@ -69,9 +69,6 @@ main {
     padding: 15px;
 }
 
-.btn-orcamento:hover{
-    background-color: red;
-}
 
 .text-justify {
     text-align: justify;
@@ -101,11 +98,11 @@ main {
 }
 
 .main-chamada h2{
-    color: rgb(221, 6, 6);
+    color: #ee2b32;
 }
 
 .main-banner{
-    margin: 0;
+    margin-bottom: 25px;
     padding: 0;
 }
 
@@ -154,8 +151,8 @@ color: #ee2b32!important;
     color:#fff;
 }
 
-.btn-saiba:hover, .btn-saiba:hover{
-    background-color: red;
+.btn-enviar:hover, .btn-saiba:hover, .btn-orcamento:hover{
+    background-color: red!important;
 }
 
 form{
@@ -211,6 +208,7 @@ form p{
     padding-top: 25px;    
     position: relative;
 }
+
 #agencia::before{
     position: absolute;
     top:0;
@@ -225,8 +223,8 @@ form p{
 #agencia p{
     color: white;
     text-align: justify;
-    font-size: 25px;
     font-family: 'noirpro-lightuploaded_file';
+    font-size:22px;
 }
 #agencia p.demo{
 color: #504a4a;
@@ -358,13 +356,14 @@ margin-bottom: 65px;
 
 #contato{
     background-color: rgb(239, 245, 250);
+    padding-top: 25px;
 }
 
 #contato p{
     text-align: justify;
     padding: 24px;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 27px;
     color: rgb(109, 106, 106);
     font-family: 'noirpro-semibolduploaded_file';

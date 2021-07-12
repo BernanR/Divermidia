@@ -43,7 +43,7 @@
         </div>
 
         <div>
-            <a href="<?=base_url('contato')?>" class="btn btn-primary btn-orcamento bg-red"><strong>ORÇAMENTO</strong></a>
+            <a href="<?=base_url('contato')?>" class="btn btn-primary btn-orcamento bg-red pulse-animate"><strong>ORÇAMENTO</strong></a>
         </div>
 
     </div>

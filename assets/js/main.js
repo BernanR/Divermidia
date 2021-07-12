@@ -1,7 +1,15 @@
 
- $(document).ready(()=>{
+$(document).ready(() => {
 
-  $("a.item-carousel").on("click", function() {
+  $(".pulse-animate").on("mouseover", function () {
+    $(this).addClass("animate__animated animate__heartBeat");
+  })
+
+  $(".pulse-animate").on("mouseout", function () {
+    $(this).removeClass("animate__animated animate__heartBeat");
+  })
+
+  $("a.item-carousel").on("click", function () {
     var item = $(this);
     var src = item.data("img");
 
@@ -13,23 +21,11 @@
   })
 
   //$("#modal-lightbox-galery").modal("show");
-
-  $(".main-banner").owlCarousel({
-      navigation: true,
-      items: 1,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 7000,
-      nav: true,
-      navText: ["<i class=\"icon ion-ios-arrow-back\"></i>", "<i class=\"icon ion-ios-arrow-forward\"></i>"],
-      singleItem: true
-  });
-
   $('.pl-carousel').owlCarousel({
-      center: true,
-      items: 1,
-      loop: true,
-      margin: 0
+    center: true,
+    items: 1,
+    loop: true,
+    margin: 0
   });
 });
 
@@ -47,17 +43,6 @@ $('#owl-produtos').owlCarousel({
     }
   }
 })
-
-$(".main-banner").owlCarousel({
-  navigation: true,
-  items: 1,
-  loop: true,
-  autoplay: true,
-  autoplayTimeout: 7000,
-  nav: true,
-  navText: ["<i class=\"icon ion-ios-arrow-back\"></i>", "<i class=\"icon ion-ios-arrow-forward\"></i>"],
-  singleItem: true
-});
 
 function privatePolitic() {
   var html = '\
