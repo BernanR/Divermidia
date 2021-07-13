@@ -19,8 +19,8 @@ if($_SERVER['SERVER_NAME'] == 'localhost' || $_SERVER['SERVER_NAME'] == 'divermi
 }else{
 
 	define('HOSTNAME', 'localhost');
-	define('USERNAME', 'righirig_root');
-	define('PASSWORD', 'ds]UHPw!e]!{');
-	define('DATABASE', 'righirig_database');
+	define('USERNAME', 'divermid_user');
+	define('PASSWORD', 'l3E^@4Bw#&8f');
+	define('DATABASE', 'divermid_db');
 	define('PORTA', '3306');
 }

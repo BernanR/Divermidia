@@ -19,7 +19,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-6 col-sm-12">
+            <div class="col-lg-6 col-sm-12">
 
                 <div class="main-chamada">
                     <?=$pageList['home']->content?>
@@ -28,7 +28,7 @@
                 <?php $this->load->view('web/_form_main') ?>
 
             </div>
-            <div class="col-6 banner-fixo">
+            <div class="col-lg-6 banner-fixo">
                 <img alt="<?=$fixBanner->title?>" title="<?=$fixBanner->title?>" class="animate__animated animate__backInDown" src="<?=base_url('assets/img/gallery/')?><?=$fixBanner->file?>">
             </div>
         </div>
@@ -38,7 +38,7 @@
 <section id="agencia">
     <div class="container">
         <div class="row justify-content-lg-center">
-            <div class="col col-sm-12 col-8 text-center resume">
+            <div class="col-sm-12 col-8 text-center resume">
                 <p><?=$pageList['agencia']->title?></p>
                 <p><?=$pageList['agencia']->resume?></p>
                 <p class="text-center">
@@ -47,7 +47,7 @@
                 </a>
                 </p>
             </div>
-            <div class="col col-8 text-center">
+            <div class="col-8 text-center">
                 <div class="video-agencia">
                     <iframe src="https://www.youtube.com/embed/<?=$video[0]->url?>" title="<?=$video[0]->title?>"
                         frameborder="0"
@@ -71,7 +71,7 @@
 <section id="contato">
     <div class="container">
         <div class="row justify-content-lg-center">
-            <div class="col col-sm-12 col-5 text-justify">
+            <div class="col-sm-12 col-lg-5 text-justify">
                 <p>a divermidia participa da construção de autoridade e reputação das marcas. oferecemos
                     soluções
                     inovadoras, sempre com agilidade na execução e estratégias balizadas pela união de anos de
@@ -83,7 +83,7 @@
                     comunicação.
                 </p>
             </div>
-            <div class="col col-sm-12 col-5 text-center">
+            <div class="col-sm-12 col-lg-5 text-center">
                 <img src="<?=base_url('assets/img/')?>/ideias.png">
             </div>
 
@@ -108,7 +108,7 @@
 </section>
 
 <section>
-    <div class="container col-6">
+    <div class="container col-lg-6">
         <?php $this->load->view('web/_form_main') ?>
     </div>
 </section>

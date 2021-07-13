@@ -8,8 +8,15 @@
             <div class="navbar-nav nav-bar">
                 <ul>
                     <li><a class="nav-link" href="#home"><strong>Home</strong></a></li>
-                    <li><a class="nav-link" href="#agencia" onClick="$('#agencia').animatescroll({scrollSpeed:3000,easing:'easeOutElastic',padding:80});"><strong>Agência</strong></a></li>
-                    <li><a class="nav-link" href="#portifolio" onClick="$('#portifolio').animatescroll({scrollSpeed:3000,easing:'easeOutElastic',padding:80});"><strong>Portifólio</strong></a></li>
+                    <li><a class="nav-link" href="#agencia"><strong>Agência</strong></a></li>
+                    <li class="dropdown">
+                        <a class="nav-link" href="#portifolio"><strong>Portifólio</strong></a>
+                        <ul class="dropdown-menu hide-dropdown-mobile" aria-labelledby="navbarDropdownMenuLink">
+                            <li class="dropdown-item">
+                                <strong><a title="" href="">Menu</a></strong>                                            
+                            </li>
+                        </ul>
+                    </li>
                     <li><a class="nav-link" href="<?=base_url('contato')?>"><strong>Contato</strong></a></li>
                     <?php foreach ($menus as $menu) :  ?>
                         <li class="nav-item dropdown">
