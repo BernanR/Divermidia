@@ -571,3 +571,18 @@ footer p{
         top: 0;
     }
 }
+
+@media screen and (max-width: 768px) { 
+    .banner-fixo img{
+        top: 0;
+    }
+    .jobs-recentes .b-r{
+        border: 0;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .redes-sociais ul{
+        top: 0;
+    }
+}

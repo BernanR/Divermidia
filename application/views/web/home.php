@@ -47,7 +47,7 @@
                 </a>
                 </p>
             </div>
-            <div class="col-lg-8 col-sm-11 text-center">
+            <div class="col-lg-8 col-sm-11 col-md-12 text-center">
                 <div class="video-agencia">
                     <iframe src="https://www.youtube.com/embed/<?=$video[0]->url?>" title="<?=$video[0]->title?>"
                         frameborder="0"
