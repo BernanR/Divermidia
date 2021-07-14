@@ -78,9 +78,11 @@ function dd($var,$exit=FALSE){
 }
 
 
-function get_erros_validation($first_only=true){
+function get_erros_validation($first_only=true, $tag=true){
     if ($first_only) {
         $string_erros = validation_errors('|');
+        $string_erros = str_replace("<p>", '', $string_erros);
+        $string_erros = str_replace("</p>", '', $string_erros);
         $list_erros = explode('|', $string_erros);
         $erros = [];
 
@@ -93,6 +95,7 @@ function get_erros_validation($first_only=true){
         $button = "<button type=\"button\" class=\"close\" data-dismiss=\"alert\">&times;</button>";
 
         if (count($erros) > 0) {
+            if (!$tag) return $erros[0];
             return '<p class="alert alert-danger">' .$button . $erros[0].'</p>';
         }
         
@@ -384,8 +387,8 @@ function get_menus() {
 
 function replaceUrlImg($content){//content que vem de pages
      $domains = [
-      'http://localhost/righi-righi/',
-      'http://srv242.teste.website/~righirighicom'
+      'http://divermidia.local/',
+      'https://divermidia.com.br/novo/'
     ];//CASO SURJAM MAIS DOMÍNIOS, COLOCAR NESSA ARRAY
     
     $url_base = base_url();

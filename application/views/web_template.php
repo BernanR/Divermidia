@@ -5,7 +5,7 @@
     
     $description = (isset($meta_description)) ?  $meta_description : $config->site_title;    
     $image_src = (isset($image_src)) ? $image_src : img_url('favicon_192x192.png');  
-    createCaptcha();
+    //createCaptcha();
     $css_v = '1.3';
     $js_v = '1.5';   
 
@@ -48,7 +48,6 @@
         <link type="text/css" rel="stylesheet" href="<?= base_url('assets/lib/owl-carousel/docs/assets/owlcarousel/assets/') ?>owl.carousel.min.css">
         <link type="text/css" rel="stylesheet" href="<?= base_url('assets/lib/owl-carousel/docs/assets/owlcarousel/assets/') ?>owl.theme.default.min.css">
         <link type="text/css" rel="stylesheet" href="<?= base_url('assets/lib/animate/css/') ?>animate.min.css">
-
         <!-- lightbox -->
         <link rel="stylesheet" href="<?=base_url('assets/lib/lightbox/css/lightbox.min.css')?>">
 
@@ -63,6 +62,8 @@
         <link rel="icon" href="<?=img_url('favicon_32x32.png')?>?v=1" sizes="32x32">
         <link rel="icon" href="<?=img_url('favicon_192x192.png')?>?v=1" sizes="192x192">
         <link rel="apple-touch-icon-precomposed" href="<?=img_url('favicon_180x180.png')?>?v=1">
+
+        <link rel="stylesheet" href="<?=base_url('assets/lib/sweet/sweetalert2.min.css')?>">
 
     </head>
 
@@ -102,9 +103,10 @@
                 });
             </script>
         <?php endif ?>
-
-        <script type="text/javascript" src="<?= base_url('assets/lib/owl-carousel/docs/assets/owlcarousel/owl.carousel.min.js')?>"></script>
+        <script type="text/javascript" src="<?=base_url('assets/lib/sweet/sweetalert2@11.js')?>"></script>
+        <script type="text/javascript" src="<?=base_url('assets/lib/owl-carousel/docs/assets/owlcarousel/owl.carousel.min.js')?>"></script>
         <script src="<?=base_url('assets/lib/lightbox/js/lightbox.min.js')?>"></script>
-        <script src="<?=base_url('assets/js')?>/main.js"></script>       
+        <script src="<?=base_url('assets/js')?>/main.js"></script>      
+        <input type="hidden" id="base_url" value="<?=base_url()?>"> 
     </body>
 </html>

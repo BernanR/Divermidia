@@ -38,7 +38,7 @@ if($_SERVER['SERVER_NAME'] == 'divermidia.local'){
 } elseif($_SERVER['SERVER_NAME'] == 'localhost') {
 	$config['base_url'] = 'http://' . $_SERVER['SERVER_NAME'] . '/';
 } else{
-	$config['base_url'] = 'https://'.$_SERVER['SERVER_NAME']. '/';	
+	$config['base_url'] = 'https://'.$_SERVER['SERVER_NAME']. '/novo/';	
 }
 
 

@@ -126,6 +126,7 @@ $route = array(
 
     //rotas para Website ------------------------------------------------------------------------
     'home' => 'WB_Home_controller',
+    'send-form' => 'WB_Home_controller/send_form',
     'contato'=> 'WB_Contato_controller',
     'lista-compra' =>'WB_Cart_controller',
     'empresa'=>'WB_QuemSomos_controller',

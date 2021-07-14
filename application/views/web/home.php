@@ -12,14 +12,15 @@
 <section id="home">
     <div class="main-banner">
        
-        <?php if ($banners):  ?>
-        <div class="banner"><img src="<?=base_url('assets/img/banners/' . $banners->desktop )?>" alt=""></div>
+        <?php if ($banners):  ?> 
+            <div class="banner d-sm-block d-md-none"><img src="<?=base_url('assets/img/banners/' . $banners->mobile )?>" alt=""></div>
+            <div class="banner d-none d-sm-none d-md-block"><img src="<?=base_url('assets/img/banners/' . $banners->desktop )?>" alt=""></div>
         <?php endif ?>
 
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-sm-12">
+            <div class="col-lg-6 col-sm-12 order-sm-last order-lg-last">
 
                 <div class="main-chamada">
                     <?=$pageList['home']->content?>
@@ -28,7 +29,7 @@
                 <?php $this->load->view('web/_form_main') ?>
 
             </div>
-            <div class="col-lg-6 order-first banner-fixo">
+            <div class="col-lg-6 order-sm-first order-lg-last banner-fixo">
                 <img alt="<?=$fixBanner->title?>" title="<?=$fixBanner->title?>" class="animate__animated animate__backInDown" src="<?=base_url('assets/img/gallery/')?><?=$fixBanner->file?>">
             </div>
         </div>
@@ -37,8 +38,8 @@
 
 <section id="agencia">
     <div class="container">
-        <div class="row justify-content-lg-center justify-content-sm-center">
-            <div class="col-sm-12 col-8 text-center resume">
+        <div class="row justify-content-lg-center">
+            <div class="col-sm-12 col-lg-8 text-center resume">
                 <p><?=$pageList['agencia']->title?></p>
                 <p><?=$pageList['agencia']->resume?></p>
                 <p class="text-center">
