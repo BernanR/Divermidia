@@ -37,7 +37,7 @@
 
 <section id="agencia">
     <div class="container">
-        <div class="row justify-content-lg-center">
+        <div class="row justify-content-lg-center justify-content-sm-center">
             <div class="col-sm-12 col-8 text-center resume">
                 <p><?=$pageList['agencia']->title?></p>
                 <p><?=$pageList['agencia']->resume?></p>
@@ -47,7 +47,7 @@
                 </a>
                 </p>
             </div>
-            <div class="col-lg-8 col-sm-11 col-md-12 text-center">
+            <div class="col-lg-8 col-sm-12 col-md-12 text-center">
                 <div class="video-agencia">
                     <iframe src="https://www.youtube.com/embed/<?=$video[0]->url?>" title="<?=$video[0]->title?>"
                         frameborder="0"

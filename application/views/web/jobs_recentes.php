@@ -1,10 +1,10 @@
 <div class="jobs-recentes">
     <div class="row justify-content-lg-center mg-0 info-job-center">                
-        <div class="row justify-content-lg-center">
-            <div class="col col-lg-3 col-sm-9 col-md-9 b-r">
+        <div class="row justify-content-lg-center justify-content-md-center">
+            <div class="col col-lg-3 col-sm-9 col-md-6 b-r">
                 <h5 class="animate__animated animate__backInRight wow animate__delay-0.2s" >JOBS RECENTES</h5>
             </div>
-            <div class="col col-lg-6 col-sm-12 col-md-12 right-text jobs-text">
+            <div class="col col-lg-6 col-sm-12 col-md-6 right-text jobs-text">
                 <p class="animate__animated animate__backInLeft wow animate__delay-1s">
                     CRIATIVIDADE E TÉCNICA NA CRIAÇÃO DA SUA IDENTIDADE VISUAL ATRAIRÁ AINDA<br> MAIS SEUS
                     CLIENTES
