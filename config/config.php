@@ -14,13 +14,12 @@ if($_SERVER['SERVER_NAME'] == 'localhost' || $_SERVER['SERVER_NAME'] == 'divermi
 	define('USERNAME', 'root');
 	define('PASSWORD', '');
 	define('DATABASE', 'divermidia_db');
-	define('PORTA', '3306');
+	//define('PORTA', '3306');
 
 }else{
-
 	define('HOSTNAME', 'localhost');
 	define('USERNAME', 'divermid_user');
-	define('PASSWORD', 'l3E^@4Bw#&8f');
-	define('DATABASE', 'divermid_db');
-	define('PORTA', '3306');
+	define('PASSWORD', '-[h3[ZGfXY,!');
+	define('DATABASE', 'divermi1_db');
+	//define('PORTA', '3306');
 }

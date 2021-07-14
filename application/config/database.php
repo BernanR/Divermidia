@@ -59,7 +59,7 @@ $db['default']['hostname'] = HOSTNAME;
 $db['default']['username'] = USERNAME;
 $db['default']['password'] = PASSWORD;
 $db['default']['database'] = DATABASE;
-	
+	//echo '<pre>'; print_r($db); echo '</pre>'; die;
 // }else{	
 
 

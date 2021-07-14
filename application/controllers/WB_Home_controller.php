@@ -19,7 +19,6 @@ class WB_Home_controller extends CI_Controller
     public $template = 'web_template';
     public $module = 'web/';
 
-
     public function __construct()
     {
         parent::__construct();
@@ -33,7 +32,7 @@ class WB_Home_controller extends CI_Controller
      * Método invocado depois do método construtor 
      */
     public function index() {
- 
+
         $this->load->model("Media_model","Media");    
         $this->load->model('Page_model', 'Page');
 
@@ -44,7 +43,7 @@ class WB_Home_controller extends CI_Controller
         $data['pageList'] = $page;
         $data['into_page'] = false;
         $data['meta_keywords'] = $page['home']->keywords;
-        
+
         load_module(
             $this->module . 'home', 
             $data, 
@@ -170,10 +169,16 @@ class WB_Home_controller extends CI_Controller
         $this->form_validation->set_rules('message','Mensagem','trim|required|min_length[5]');
 
         if($this->form_validation->run()) {
-            echo '<pre>'; print_r("oiii"); echo '</pre>'; die;
-        }
+            echo json_encode([
+                "status" => true,
+                "message" =>  'Obrigado! sua mensagem foi enviada com sucesso, em breve retornaremos o contato.'
+            ]);
 
-        echo get_erros_validation($first_only = true);
+        } else {
+            echo json_encode([
+                "status" => false,
+                "error" =>  get_erros_validation($first_only = true, false)
+            ]);
+        }        
     }
-
 }

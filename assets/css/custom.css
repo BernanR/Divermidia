@@ -174,8 +174,21 @@ color: #ee2b32!important;
 .btn-enviar:hover, .btn-saiba:hover, .btn-orcamento:hover{
     background-color: red!important;
 }
+#politica{
+    padding: 25px;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    width: 100%;
+    z-index: 9999999999;
+}
+.input-politica input{
+    padding: 0;
+    font-size: 12px;
+    height: 33px;
+}
 
-.btn-check:focus+.btn-primary, .btn-primary:focus {
+.btn-check:focus+.btn-primary, .btn-primary:focus, .btn-primary.disabled, .btn-primary:disabled {
     background: #ee2b32!important;    
 }
 
@@ -583,5 +596,20 @@ footer p{
 @media (min-width: 1400px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1050px;
+    }
+}
+
+@media screen and (max-width: 576px) { 
+    .banner-fixo img{
+        top: 0;
+    }
+    .jobs-recentes .b-r{
+        border: 0;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .redes-sociais ul{
+        top: 0;
     }
 }

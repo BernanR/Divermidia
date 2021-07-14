@@ -10,9 +10,9 @@
         <div class="col-12">
         <textarea name="message" placeholder="Mensagem:" class="form-divm form-control"></textarea>
         </div>
-        <div class="col-12">
+        <div class="col-12 error-msg d-none">
             <div class="alert alert-danger d-flex align-items-center" role="alert">
-                <div>
+                <div class="message">
                     An example danger alert with an icon
                 </div>
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>

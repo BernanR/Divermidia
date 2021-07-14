@@ -1,28 +1,47 @@
 
 $(document).ready(() => {
-
   $(".main-form").on("submit", function () {
     let form = $(this).serialize();
 
+    $(this).find("button[type=submit]").attr("disabled", true)
     $.ajax({
       type: "POST",
       url: "send-form",
       data: form,
       success: function (response) {
+        var data = JSON.parse(response);
+        $(".main-form").find("button[type=submit]").attr("disabled", false)
+        if (!data.status) {
+          $(".error-msg").removeClass("d-none");
+          let message = $(".error-msg").find(".message");
+          message.html(data.error);
 
+        } else {
+          $(".error-msg").addClass("d-none");
+          $(".main-form")[0].reset();
+          Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: "Mensagem enviada com sucesso!",
+            text: data.message,
+            showConfirmButton: false,
+            timer: 3500
+          })
+
+        }
       }
     });
 
     return false;
   })
 
-  $(".pulse-animate").on("mouseover", function () {
-    $(this).addClass("animate__animated animate__heartBeat");
-  })
+  // $(".pulse-animate").on("mouseover", function () {
+  //   $(this).addClass("animate__animated animate__bounceIn");
+  // })
 
-  $(".pulse-animate").on("mouseout", function () {
-    $(this).removeClass("animate__animated animate__heartBeat");
-  })
+  // $(".pulse-animate").on("mouseout", function () {
+  //   $(this).removeClass("animate__animated animate__bounceIn");
+  // })
 
   $("a.item-carousel").on("click", function () {
     var item = $(this);
@@ -62,11 +81,11 @@ $('#owl-produtos').owlCarousel({
 function privatePolitic() {
   var html = '\
     <div class="politica" id="politica">\
-      <div class="content">\
+      <div class="container">\
         <h7><strong>Este website utiliza cookies.</strong></h7>\
-        <p>Nossa plataforma utiliza cookies para garantir que você tenha a melhor experiência de navegação. Se quiser saber mais, basta acessar nossa <a href="https://www.greenprocess.com.br/politica-privacidade">Política de Privacidade.</a></p>\
+        <p>Nossa plataforma utiliza cookies para garantir que você tenha a melhor experiência de navegação. Se quiser saber mais, basta acessar nossa <a href="' + $("#base_url").val() + 'politica-privacidade">Política de Privacidade.</a></p>\
         <div class="input-politica">\
-          <input type="button" id=\"accept_politicy\" name="acao" value="ENTENDI">\
+          <input class=\"btn btn-primary btn-enviar pulse-animate\" type="button" id=\"accept_politicy\" name="acao" value="ENTENDI">\
         </div>\
       </div>\
     </div>\

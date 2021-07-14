@@ -17,7 +17,7 @@
                         <?php $video = getGallery(6, false); ?>
                         <div class="container mt-4 form-footer" >
                             <div class="row justify-content-lg-center">
-                                <div class="col-sm-8">
+                                <div class="col-lg-8 col-sm-12">
                                 <iframe src="https://www.youtube.com/embed/<?=$video[0]->url?>" title="<?=$video[0]->title?>"
                                                             frameborder="0"
                                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -48,7 +48,7 @@
 
 <div class="container mt-4 form-footer" >
     <div class="row justify-content-lg-center">
-        <div class="col-sm-6">
+        <div class="col-sm-12 col-lg-6">
             <?php $this->load->view('web/_form_main') ?>
         </div>
     </div>
