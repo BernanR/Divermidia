@@ -12,8 +12,9 @@
 <section id="home">
     <div class="main-banner">
        
-        <?php if ($banners):  ?>
-        <div class="banner"><img src="<?=base_url('assets/img/banners/' . $banners->desktop )?>" alt=""></div>
+        <?php if ($banners):  ?> 
+            <div class="banner d-sm-block d-md-none"><img src="<?=base_url('assets/img/banners/' . $banners->mobile )?>" alt=""></div>
+            <div class="banner d-none d-sm-none d-md-block"><img src="<?=base_url('assets/img/banners/' . $banners->desktop )?>" alt=""></div>
         <?php endif ?>
 
     </div>
@@ -38,7 +39,7 @@
 <section id="agencia">
     <div class="container">
         <div class="row justify-content-lg-center">
-            <div class="col-sm-12 col-8 text-center resume">
+            <div class="col-sm-12 col-lg-8 text-center resume">
                 <p><?=$pageList['agencia']->title?></p>
                 <p><?=$pageList['agencia']->resume?></p>
                 <p class="text-center">
@@ -47,7 +48,7 @@
                 </a>
                 </p>
             </div>
-            <div class="col-8 text-center">
+            <div class="col-lg-8 text-center">
                 <div class="video-agencia">
                     <iframe src="https://www.youtube.com/embed/<?=$video[0]->url?>" title="<?=$video[0]->title?>"
                         frameborder="0"

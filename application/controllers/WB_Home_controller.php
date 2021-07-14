@@ -163,4 +163,17 @@ class WB_Home_controller extends CI_Controller
         );
     }
 
+    public function send_form() {
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules('name','Nome','trim|required|min_length[2]');
+        $this->form_validation->set_rules('phone','Telefone','trim|required|min_length[11]');
+        $this->form_validation->set_rules('message','Mensagem','trim|required|min_length[5]');
+
+        if($this->form_validation->run()) {
+            echo '<pre>'; print_r("oiii"); echo '</pre>'; die;
+        }
+
+        echo get_erros_validation($first_only = true);
+    }
+
 }

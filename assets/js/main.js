@@ -1,6 +1,21 @@
 
 $(document).ready(() => {
 
+  $(".main-form").on("submit", function () {
+    let form = $(this).serialize();
+
+    $.ajax({
+      type: "POST",
+      url: "send-form",
+      data: form,
+      success: function (response) {
+
+      }
+    });
+
+    return false;
+  })
+
   $(".pulse-animate").on("mouseover", function () {
     $(this).addClass("animate__animated animate__heartBeat");
   })

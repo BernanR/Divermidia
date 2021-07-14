@@ -9,14 +9,19 @@
                 <ul>
                     <li><a class="nav-link" href="#home"><strong>Home</strong></a></li>
                     <li><a class="nav-link" href="#agencia"><strong>Agência</strong></a></li>
-                    <li class="dropdown">
-                        <a class="nav-link" href="#portifolio"><strong>Portifólio</strong></a>
-                        <ul class="dropdown-menu hide-dropdown-mobile" aria-labelledby="navbarDropdownMenuLink">
-                            <li class="dropdown-item">
-                                <strong><a title="" href="">Menu</a></strong>                                            
-                            </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>Portifólio</strong>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><strong><a class="dropdown-item" href="/criativo">Criativo</a></strong></li>
+                            <li><strong><a class="dropdown-item" href="/producao-videos">Producao de Vídeos</a></strong></li>
+                            <li><strong><a class="dropdown-item" href="/marketing-digital">Marketing Digital</a></strong></li>
+                            <li><strong><a class="dropdown-item" href="/sites">Sites</a></strong></li>
                         </ul>
                     </li>
+
                     <li><a class="nav-link" href="<?=base_url('contato')?>"><strong>Contato</strong></a></li>
                     <?php foreach ($menus as $menu) :  ?>
                         <li class="nav-item dropdown">
