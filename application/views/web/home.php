@@ -29,7 +29,7 @@
                 <?php $this->load->view('web/_form_main') ?>
 
             </div>
-            <div class="col-lg-6 order-sm-first order-lg-last banner-fixo">
+            <div class="col-lg-6 col-sm-12 order-sm-first order-lg-last banner-fixo">
                 <img alt="<?=$fixBanner->title?>" title="<?=$fixBanner->title?>" class="animate__animated animate__backInDown" src="<?=base_url('assets/img/gallery/')?><?=$fixBanner->file?>">
             </div>
         </div>

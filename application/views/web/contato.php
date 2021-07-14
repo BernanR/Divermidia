@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 col-sm-12">
                         <?php $this->load->view('web/_form_main') ?>
                     </div>                
                 </div>                
