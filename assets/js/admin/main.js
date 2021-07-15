@@ -69,8 +69,35 @@ function addMedia(content, ulID, counterValue) {
   li.setAttribute("id", `li_${counterValue}`);
   li.innerHTML = content;
   ul.append(li);
+
+  verificaImageField($(li))
 }
 
+function verificaImageField(li) {
+  var input = li.find(".input-file-gallry");
+  $(input).on("blur", function () {
+    tratarCampoImage(this, li)
+  })
+}
+
+function tratarCampoImage(campo, li) {
+  var src = $(campo).val();
+  var http = src.substr(0, 4);
+
+  if (http == "http") {
+    $(li.find(".img-block-only")).show();
+    $(li.find(".img-video-only")).hide();
+    $(li.find(".type-midia")).val("image");
+
+    var image = $(li.find(".image"));
+    image.html("<img style=\"width:100%;\" src='" + src + "'>");
+  }
+}
+
+$(".input-file-gallry").on("blur", function () {
+  var li = $(this).parents("li.list-group-item");
+  tratarCampoImage(this, li);
+})
 function removeSource(elementID) {
   //remove LI da lista de mídias da galeria
   const element = document.getElementById(elementID);
@@ -87,4 +114,18 @@ function changeEmbedSource(videoID, targetIframeID) {
   targetIframe.setAttribute("src", newSrc);
 }
 
-load_media_files(
+function load_media_files() {
+  $("#media_btn").click(function () {
+    $("#mediafiles_upload").modal();
+    $.ajax({
+      type: "GET",
+      url: base_url + "api/get-media/upld_",
+      dataType: "html",
+      success: function (data) {
+        $("#modal_load_media").html(data);
+      },
+    });
+    return false;
+  });
+}
+load_media_files()

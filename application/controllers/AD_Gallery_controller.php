@@ -162,6 +162,8 @@ class AD_Gallery_controller extends CI_Controller {
 
             $page = ($data['gallery']->type == 1) ? 'img_edit' : 'video_edit';
 
+            if ($data['gallery']->type == 3) $page = 'image_video_edit';
+            
             //if($data['gallery']->type == 1) 
             $data['medias'] = orderGalleryJson($data['medias']);
 

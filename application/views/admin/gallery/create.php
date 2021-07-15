@@ -20,6 +20,7 @@
         <select class="form-control" name="type" id="type">
           <option value="1">Imagens</option>
           <option value="2">Vídeos</option>
+          <option value="3">Vídeos e Imagens</option>
         </select>
       </div>
     </div>
