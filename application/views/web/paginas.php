@@ -9,7 +9,7 @@
     </div>    
     <div class="row">
         <div class="col-sm-12">
-            <div id="content" class="article text-content col-sm-12" >
+            <div id="content" class="article text-content col-sm-12 text-md-center" >
                 <article id="wikiArticle">
                     <?=$_page->content ?>
 

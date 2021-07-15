@@ -604,7 +604,6 @@ footer p{
         top: 0;
     }
     .jobs-recentes .b-r{
-        border: 0;
         text-align: center;
         display: inline-block;
     }
@@ -612,6 +611,38 @@ footer p{
     .redes-sociais ul{
         top: 0;
     }
+
+    .two-colors tbody tr td{
+        display: inline-block;
+        position: inherit;
+        margin-right: 0;
+    }
+
+    .two-colors tbody tr td:first-child img {
+        margin-right: 0;
+    }
+
+    .two-colors tbody tr td:last-child:before{
+        content:"";
+        width: 5000%;
+        background-color: #18a9e1;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+        position: initial;
+    }
+
+    .two-colors tbody tr td:first-child:before{
+        content:"";
+        width: 5000%;
+        left:-5000px;
+        background-color: #e9f0f3;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+        position: initial;
+    }
+    
 }
 
 @media screen and (max-width: 768px) { 
@@ -625,5 +656,36 @@ footer p{
 
     .redes-sociais ul{
         top: 0;
+    }
+
+    .two-colors tbody tr td{
+        display: inline-block;
+        position: inherit;
+        margin-right: 0;
+    }
+
+    .two-colors tbody tr td:first-child img {
+        margin-right: 0;
+    }
+
+    .two-colors tbody tr td:last-child:before{
+        content:"";
+        width: 5000%;
+        background-color: #18a9e1;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+        position: initial;
+    }
+
+    .two-colors tbody tr td:first-child:before{
+        content:"";
+        width: 5000%;
+        left:-5000px;
+        background-color: #e9f0f3;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+        position: initial;
     }
 }
