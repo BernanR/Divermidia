@@ -1,3 +1,5 @@
+<?php $gallery = getGallery(10, false); ?>
+
 <div class="jobs-recentes">
     <div class="row justify-content-lg-center mg-0 info-job-center">                
         <div class="row justify-content-lg-center justify-content-md-center">
@@ -14,46 +16,53 @@
             </div>
         </div>
     </div>
-
+ 
     <div class="row jobs-carousel">
         <div class="columns">
-            <div class="pl-carousel owl-carousel">
-                <!-- Grid row -->
-                <div class="row">
-
-                    <!-- Grid column -->
-                    <div class="item col-lg-4 col-md-12 mb-4">
-                        <a class="item-carousel" data-video="" data-img="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" data-saibamais="www.google.com">
-                            <img class="img-fluid z-depth-1"
-                                src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt="video"
-                                data-toggle="modal" data-target="#modal1">
-                        </a>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="item col-lg-4 col-md-6 mb-4">
-
-                        <a><img class="img-fluid z-depth-1"
-                                src="https://mdbootstrap.com/img/screens/yt/screen-video-2.jpg" alt="video"
-                                data-toggle="modal" data-target="#modal6">
-                        </a>
-
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="item col-lg-4 col-md-6 mb-4">
-                        <a><img class="img-fluid z-depth-1"
-                                src="https://mdbootstrap.com/img/screens/yt/screen-video-3.jpg" alt="video"
-                                data-toggle="modal" data-target="#modal4"></a>
-
-                    </div>
-                    <!-- Grid column -->
-
-                </div>
-                <!-- Grid row -->
+            <div class="pl-carousel owl-carousel carousel owl-theme"  id="owl-carousel-jobs">
+                <?php foreach ($gallery as $key => $file) :  ?>
+                    <a class="item-carousel" data-video="<?=$file->youtube_id?>" data-img="<?=$file->url?>" data-saibamais="<?=$file->link_url?>">
+                        <img class="img-fluid z-depth-1"
+                            src="<?=$file->url?>" alt="<?=$file->title?>"
+                            data-toggle="modal" data-target="#modal1">
+                    </a>   
+                <?php endforeach ?>                                
             </div>
         </div>
     </div>
 </div>
+
+<div class="modal fade modal-lightbox" id="modal-lightbox-galery" aria-hidden="true" aria-labelledby="modal-lightbox-galery" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">     
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn-link saiba-mais">SAIBA MAIS</a>
+        <button type="button" class="btn btn-link close" data-bs-dismiss="modal">FECHAR X</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(function() {
+    $('#owl-carousel-jobs').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        dots:false,
+        autoplayTimeout: 5000,
+        autoplay: true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            1000:{
+                items:3
+            },
+        }
+    });
+})
+</script>
