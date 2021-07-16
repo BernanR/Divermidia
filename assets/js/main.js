@@ -44,15 +44,37 @@ $(document).ready(() => {
   // })
 
   $("a.item-carousel").on("click", function () {
-    var item = $(this);
-    var src = item.data("img");
+    $(this).addClass("active");
+    showInfoModal();
 
-    var image = "<img src=\"" + src + "\">";
-
-    $("#modal-lightbox-galery").find(".modal-body").html(image);
-    $("#modal-lightbox-galery").modal("show");
+    $("#modal-lightbox-galery").on('hidden.bs.modal', function (e) {
+      $("a.item-carousel").removeClass("active");
+    })
 
   })
+
+  function showInfoModal() {
+    var item = $("a.item-carousel.active");
+    var src = item.data("img");
+    var video = item.data("video");
+    var saiba_mais = item.data("saibamais");
+    var saiba_mais_brn = $($("#modal-lightbox-galery").find('.saiba-mais'));
+    saiba_mais_brn.hide();
+
+    if (video != '') {
+      var file = '<iframe id="main_iframe" src="https://www.youtube.com/embed/' + video + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    } else {
+      var file = "<img src=\"" + src + "\">";
+    }
+
+    if (saiba_mais != '') {
+      saiba_mais_brn.attr("href", saiba_mais)
+      saiba_mais_brn.show();
+    }
+
+    $("#modal-lightbox-galery").find(".modal-body").html(file);
+    $("#modal-lightbox-galery").modal("show");
+  }
 
   //$("#modal-lightbox-galery").modal("show");
   $('.pl-carousel').owlCarousel({

@@ -1,3 +1,8 @@
+<style>
+  .gallery-form label{
+    font-size:12px;
+  }
+</style>
 <form  focus-response="#mensagem" id="form" method="post" enctype="multipart/form-data">
   <fieldset><legend>Editar Galeria de Vídeo</legend>
     <div class="row msgOk">     
@@ -65,24 +70,35 @@
           <li class="list-group-item d-flex justify-content-between align-items-center" id="li_<?=$key?>">
             <div class="row">
             <?php if ( $media->type == "video" ):  ?>
-                <div class="col-2">
+                <div class="col-1">
                     <iframe style="width: 109%;height: 90px;" id="main_iframe" src="https://www.youtube.com/embed/<?=$media->url?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>   
             <?php else: ?>
                 <div class="col-2 image">
                     <img src="<?=$media->url?>" style="width:100%;">
                 </div>   
+                <div class="col-2">
+                  <label> Link (Saiba mais)</label>
+                  <input placeholder="Título" name="medias[<?=$key?>][link_url]" type="text" class="form-control" value="<?= $media->link_url ?>">
+                </div> 
             <?php endif ?>
+
+              <div class="col-2">
+                <label> URL IMAGE </label>
+                <input required placeholder="ID" name="medias[<?=$key?>][url]" type="text" class="form-control input-file-gallry" value="<?= $media->url ?>">
+              </div>
+
+              <div class="col-2">
+                <label> YOUTUBE ID </label>
+                <input placeholder="ID" name="medias[<?=$key?>][youtube_id]" type="text" class="form-control input-file-gallry" value="<?= $media->youtube_id ?>">
+              </div>
                        
-              <div class="col-4">
+              <div class="col-3">
                 <label> Título</label>
                 <input required placeholder="Título" name="medias[<?=$key?>][title]" type="text" class="form-control" value="<?= $media->title ?>">
               </div>
 
-              <div class="col-4">
-                <label> URL </label>
-                <input required placeholder="ID" name="medias[<?=$key?>][url]" type="text" class="form-control input-file-gallry" value="<?= $media->url ?>">
-              </div>
+              
 
               <div class="col-1">
                 <label> Ordem </label>
@@ -112,20 +128,25 @@
     
     counter.setAttribute('value', Number.parseInt(counter.value) + 1)
     addMedia( `
-      <div class="row">
+      <div class="row gallery-form">
         <div style=\"\" class="col-2 image img-block-only"></div>
         
-        <div class="col-4 img-block-only">
+        <div class="col-2 img-block-only">
           <label> Link (Saiba mais) </label>
           <input placeholder="Link Saiba Mais" name="medias[${counter.value}][link_url]" type="text" class="form-control">
         </div>
 
-        <div class="col-6 img-video-only">
-          <label> ID vídeo | URL da imagem </label>
-          <input required placeholder="ID | URL" name="medias[${counter.value}][url]" type="text" class="form-control input-file-gallry">
+        <div class="col-3">
+          <label>URL da imagem </label>
+          <input required placeholder="ID" name="medias[${counter.value}][url]" type="text" class="form-control input-file-gallry">
         </div>
 
-        <div class="col-4">
+        <div class="col-2">
+          <label>YOUTUBE ID </label>
+          <input required placeholder="YOUTUBE ID" name="medias[${counter.value}][youtube_id]" type="text" class="form-control">
+        </div>
+
+        <div class="col-3">
           <label> Título </label>
           <input required placeholder="Título" name="medias[${counter.value}][title]" type="text" class="form-control">
         </div>

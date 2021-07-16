@@ -90,19 +90,6 @@
         <script src="<?=base_url('assets/lib/bootstrap/js/')?>bootstrap.min.js"></script>   
         <script src="<?=base_url('assets/lib')?>/jquery.mask.min.js"></script>
 
-         <?php if (isset($mCustomScrollbar)):  ?>
-            <script src="<?=base_url('assets/lib/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js')?>"></script>    
-            <script>
-                $(document).ready(()=>{
-                    $(".scrollX").mCustomScrollbar({
-                        axis:"x",
-                        advanced:{
-                            autoExpandHorizontalScroll:true
-                        }
-                    });
-                });
-            </script>
-        <?php endif ?>
         <script type="text/javascript" src="<?=base_url('assets/lib/sweet/sweetalert2@11.js')?>"></script>
         <script type="text/javascript" src="<?=base_url('assets/lib/owl-carousel/docs/assets/owlcarousel/owl.carousel.min.js')?>"></script>
         <script src="<?=base_url('assets/lib/lightbox/js/lightbox.min.js')?>"></script>

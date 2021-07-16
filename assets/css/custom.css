@@ -689,3 +689,17 @@ footer p{
         position: initial;
     }
 }
+
+
+/* .item-carousel{
+    border: 5px solid #000;
+    display: inline-block;
+    height: 230px;
+    overflow: hidden;
+    position: relative;
+} */
+
+#modal-lightbox-galery iframe{
+    width: 100%!important;
+    height: 400px!important;
+}

@@ -114,19 +114,6 @@
     </div>
 </section>
 
-<div class="modal fade modal-lightbox" id="modal-lightbox-galery" aria-hidden="true" aria-labelledby="modal-lightbox-galery" tabindex="-1">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">     
-      <div class="modal-body">
-        
-      </div>
-      <div class="modal-footer">
-        <a href="#" class="btn-link saiba-mais">SAIBA MAIS</a>
-        <button type="button" class="btn btn-link close" data-bs-dismiss="modal">FECHAR X</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <script src="<?=base_url('assets/lib/wow/wow.min.js')?>"></script>   
 <script>
