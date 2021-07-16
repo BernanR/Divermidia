@@ -666,6 +666,8 @@ footer p{
 
     .two-colors tbody tr td:first-child img {
         margin-right: 0;
+        display: block;
+        margin-left: 82px;
     }
 
     .two-colors tbody tr td:last-child:before{
