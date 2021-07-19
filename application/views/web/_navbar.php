@@ -16,7 +16,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><strong><a class="dropdown-item" href="/criativo">Criativo</a></strong></li>
-                            <li><strong><a class="dropdown-item" href="/producao-videos">Producao de Vídeos</a></strong></li>
+                            <li><strong><a class="dropdown-item" href="/producao-de-videos">Producao de Vídeos</a></strong></li>
                             <li><strong><a class="dropdown-item" href="/marketing-digital">Marketing Digital</a></strong></li>
                             <li><strong><a class="dropdown-item" href="/sites">Sites</a></strong></li>
                         </ul>

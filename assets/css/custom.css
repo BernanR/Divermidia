@@ -425,6 +425,11 @@ margin-bottom: 65px;
     padding: 30px;
 }
 
+.footer-img ul li a{
+    display: inline-block;
+}
+
+
 footer p{
     background-color: rgba(13, 155, 238, 0.849);
     color: white;
@@ -601,7 +606,10 @@ footer p{
 
 @media screen and (max-width: 576px) { 
     .banner-fixo img{
-        top: 0;
+        position: relative;
+        width: 100%;
+        top: 0!important;
+        margin-top: 25px;
     }
     .jobs-recentes .b-r{
         text-align: center;
@@ -647,7 +655,9 @@ footer p{
 
 @media screen and (max-width: 768px) { 
     .banner-fixo img{
-        top: 0;
+        position: relative;
+        width: 100%;
+        top: -60px;
     }
     .jobs-recentes .b-r{
         text-align: center;
@@ -692,14 +702,16 @@ footer p{
     }
 }
 
-
-/* .item-carousel{
-    border: 5px solid #000;
-    display: inline-block;
-    height: 230px;
+.owl-item {
+    text-align: center;
+}
+.item-carousel{
+    border: 7px solid #000;
+   display: inline-block;
+     /* height: 230px;
     overflow: hidden;
-    position: relative;
-} */
+    position: relative; */
+}
 
 #modal-lightbox-galery iframe{
     width: 100%!important;

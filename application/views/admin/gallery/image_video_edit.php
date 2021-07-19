@@ -85,7 +85,7 @@
 
               <div class="col-2">
                 <label> URL IMAGE </label>
-                <input required placeholder="ID" name="medias[<?=$key?>][url]" type="text" class="form-control input-file-gallry" value="<?= $media->url ?>">
+                <input  placeholder="ID" name="medias[<?=$key?>][url]" type="text" class="form-control input-file-gallry" value="<?= $media->url ?>">
               </div>
 
               <div class="col-2">
@@ -95,7 +95,7 @@
                        
               <div class="col-3">
                 <label> Título</label>
-                <input required placeholder="Título" name="medias[<?=$key?>][title]" type="text" class="form-control" value="<?= $media->title ?>">
+                <input  placeholder="Título" name="medias[<?=$key?>][title]" type="text" class="form-control" value="<?= $media->title ?>">
               </div>
 
               
@@ -138,22 +138,22 @@
 
         <div class="col-3">
           <label>URL da imagem </label>
-          <input required placeholder="ID" name="medias[${counter.value}][url]" type="text" class="form-control input-file-gallry">
+          <input  placeholder="ID" name="medias[${counter.value}][url]" type="text" class="form-control input-file-gallry">
         </div>
 
         <div class="col-2">
           <label>YOUTUBE ID </label>
-          <input required placeholder="YOUTUBE ID" name="medias[${counter.value}][youtube_id]" type="text" class="form-control">
+          <input  placeholder="YOUTUBE ID" name="medias[${counter.value}][youtube_id]" type="text" class="form-control">
         </div>
 
         <div class="col-3">
           <label> Título </label>
-          <input required placeholder="Título" name="medias[${counter.value}][title]" type="text" class="form-control">
+          <input  placeholder="Título" name="medias[${counter.value}][title]" type="text" class="form-control">
         </div>
         <input class=\"type-midia\" type=\"hidden\" value="video" name="medias[${counter.value}][type]" />
        
       </div>
-      <a title="Excluir" required class="btn btn-mini btn-danger" onclick="removeSource('li_${counter.value}')"><i style="color:#fff" class="fa fa-trash" aria-hidden="true"></i></a> 
+      <a title="Excluir"  class="btn btn-mini btn-danger" onclick="removeSource('li_${counter.value}')"><i style="color:#fff" class="fa fa-trash" aria-hidden="true"></i></a> 
       `, 'ul-append', counter.value)
   }
 </script>

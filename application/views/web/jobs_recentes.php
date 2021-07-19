@@ -35,8 +35,7 @@
 <div class="modal fade modal-lightbox" id="modal-lightbox-galery" aria-hidden="true" aria-labelledby="modal-lightbox-galery" tabindex="-1">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">     
-      <div class="modal-body">
-        
+      <div class="modal-body">        
       </div>
       <div class="modal-footer">
         <a href="#" class="btn-link saiba-mais">SAIBA MAIS</a>
@@ -50,13 +49,16 @@
 $(function() {
     $('#owl-carousel-jobs').owlCarousel({
         loop:true,
-        margin:10,
+        margin:0,
         nav:false,
         dots:false,
         autoplayTimeout: 5000,
         autoplay: true,
         responsive:{
             0:{
+                items:1,
+            },
+            580:{
                 items:1,
             },
             1000:{

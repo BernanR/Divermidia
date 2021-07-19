@@ -19,8 +19,7 @@ class AD_Dashboard_controller extends CI_Controller {
     {
         parent::__construct();
 
-        is_logged();
-
+        //is_logged(); /** tem um problema aqui, verificar depois */
         //$this->load->model("usuarios_model","User");
     }
 
@@ -28,7 +27,7 @@ class AD_Dashboard_controller extends CI_Controller {
      * Método invocado depois do método construtor 
      */
     public function index()
-    {
+    {       
         // Gerar Logs
         // $this->load->library('my_log');
         // $logs = new MY_Log();

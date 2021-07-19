@@ -58,6 +58,7 @@ $(document).ready(() => {
     var src = item.data("img");
     var video = item.data("video");
     var saiba_mais = item.data("saibamais");
+    console.log(saiba_mais)
     var saiba_mais_brn = $($("#modal-lightbox-galery").find('.saiba-mais'));
     saiba_mais_brn.hide();
 

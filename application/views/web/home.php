@@ -95,11 +95,22 @@
                             <a href="<?=base_url($pageList['criative']->slug)?>">
                                 <img data-wow-offset="5"   class="animate__animated animate__backInLeft wow animate__delay-1s" style="padding-bottom: 30px;" src="<?=base_url('assets/img/')?>/ico-criativo.png">                       
                             </a>
+                        </li>                        
+                        <li >
+                            <a href="<?=base_url('producao-de-videos')?>">    
+                                <img data-wow-offset="5"  class="animate__animated animate__backInLeft wow animate__delay-0.5s" src="<?=base_url('assets/img/')?>/ico-producao-video.png">
+                            </a>
                         </li>
-                        
-                        <li ><img data-wow-offset="5"  class="animate__animated animate__backInLeft wow animate__delay-0.5s" src="<?=base_url('assets/img/')?>/ico-producao-video.png"></li>
-                        <li ><img data-wow-offset="5"  class="animate__animated animate__backInRight wow animate__delay-0.5s" style="padding-bottom: 10px;" src="<?=base_url('assets/img/')?>/ico-mk-digital.png"></li>
-                        <li ><img data-wow-offset="5"  class="animate__animated animate__backInRight wow animate__delay-1s" style="padding-bottom: 7px;" src="<?=base_url('assets/img/')?>/ico-sites.png"></li>
+                        <li >
+                            <a href="<?=base_url('marketing-digital')?>">
+                                <img data-wow-offset="5"  class="animate__animated animate__backInRight wow animate__delay-0.5s" style="padding-bottom: 10px;" src="<?=base_url('assets/img/')?>/ico-mk-digital.png">
+                            </a>
+                        </li>
+                        <li >
+                            <a href="<?=base_url('sites')?>">
+                                <img data-wow-offset="5"  class="animate__animated animate__backInRight wow animate__delay-1s" style="padding-bottom: 7px;" src="<?=base_url('assets/img/')?>/ico-sites.png">
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
