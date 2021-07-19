@@ -610,6 +610,7 @@ footer p{
         width: 100%;
         top: 0!important;
         margin-top: 25px;
+        margin-bottom: 47px;
     }
     .jobs-recentes .b-r{
         text-align: center;
@@ -650,6 +651,14 @@ footer p{
         z-index: -1;
         position: initial;
     }
+
+    #agencia p{
+        font-size: 20px;
+    }
+
+    footer p{
+        font-size: 13px;
+    }
     
 }
 
@@ -676,8 +685,8 @@ footer p{
 
     .two-colors tbody tr td:first-child img {
         margin-right: 0;
-        display: block;
-        margin-left: 82px;
+        display: inline-block;
+        text-align: center;
     }
 
     .two-colors tbody tr td:last-child:before{
