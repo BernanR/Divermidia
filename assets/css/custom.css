@@ -612,6 +612,11 @@ footer p{
         margin-top: 25px;
         margin-bottom: 47px;
     }
+
+    .main-form{
+        width: 100%;
+    }
+
     .jobs-recentes .b-r{
         text-align: center;
         display: inline-block;
@@ -668,6 +673,11 @@ footer p{
         width: 100%;
         top: -60px;
     }
+
+    .main-form{
+        width: 100%;
+    }
+
     .jobs-recentes .b-r{
         text-align: center;
         display: inline-block;
