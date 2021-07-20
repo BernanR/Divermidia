@@ -1,5 +1,4 @@
 <?php
-
 // FOrmata data com dia da semana
 function formata_data_extenso($strDate, $tipo = 1)
 {

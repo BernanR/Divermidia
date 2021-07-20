@@ -88,6 +88,7 @@
         <input type="hidden" id="base_url" value="<?=base_url()?>" />    
 
         <script src="<?=base_url('assets/lib/bootstrap/js/')?>bootstrap.min.js"></script>   
+        <script src="<?=base_url('assets/lib/bootstrap/js/')?>popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="<?=base_url('assets/lib')?>/jquery.mask.min.js"></script>
 
         <script type="text/javascript" src="<?=base_url('assets/lib/sweet/sweetalert2@11.js')?>"></script>

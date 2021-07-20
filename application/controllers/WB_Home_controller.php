@@ -23,7 +23,7 @@ class WB_Home_controller extends CI_Controller
     {
         parent::__construct();
         //VERIFICA SE USER ESTÁ LOGADO
-        //is_logged(); 
+        is_logged(); 
 
         get_config_site('site_title');
     }
@@ -75,7 +75,6 @@ class WB_Home_controller extends CI_Controller
 
                 if (in_array(get_ext_file($file), ['png','pdg','jpg','jpeg', 'JPEG'])) {
                     $return = $this->do_upload();
-
                     
                     if ($return['status']) {
 
@@ -111,7 +110,7 @@ class WB_Home_controller extends CI_Controller
                 $mail_contato = $this->Setting->get(['key' => 'send_mail_form_home'])->data_result[0]->value;
 
                 $corpo = $this->Mailer->setEmailHomeBody($data);
-                ///$mail_contato = 'alves.bernan@gmail.com';
+                $mail_contato = 'alves.bernan@gmail.com';
                 $this->Mailer->sendMail($mail_contato, 'Contato Formulário - Solicitação de produto', $corpo, 'Strutech');
 
             }catch(Exception $e){
@@ -169,6 +168,23 @@ class WB_Home_controller extends CI_Controller
         $this->form_validation->set_rules('message','Mensagem','trim|required|min_length[5]');
 
         if($this->form_validation->run()) {
+            error_reporting(0);
+            $this->load->model("Mail_model","Mailer");
+            $this->load->model("Settings_model","Setting");
+
+            $data = array(
+                'name' => $this->input->post('name'),
+                //'mail' => $this->input->post('mail'),
+                'phone' => $this->input->post('phone'),
+                'message' => $this->input->post('message'),
+                'message_dt' => date('Y-m-d H:i:s'),
+            );
+
+            $mail_contato = $this->Setting->get(['key' => 'send_mail_form_contato'])->data_result[0]->value;
+
+            $corpo = $this->Mailer->setEmailHomeBody($data);
+            $this->Mailer->sendMail($mail_contato, 'Contato Formulário - Solicitação de produto', $corpo, 'Divermídia');
+
             echo json_encode([
                 "status" => true,
                 "message" =>  'Obrigado! sua mensagem foi enviada com sucesso, em breve retornaremos o contato.'

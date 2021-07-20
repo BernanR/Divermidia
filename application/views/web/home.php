@@ -71,8 +71,15 @@
 
 <section id="contato">
     <div class="container">
-        <div class="row justify-content-lg-center">
-            <div class="col-sm-12 col-lg-5 text-justify">
+        <div class="row justify-content-lg-center">           
+
+            <div class="col-sm-12 col-lg-5 text-center">
+                <p>
+                    <img src="<?=base_url('assets/img/')?>/ideias.png">
+                </p>
+            </div>
+
+            <div class="col-sm-12 col-lg-5 text-justify order-md-first order-lg-first order-xs-first">
                 <p>a divermidia participa da construção de autoridade e reputação das marcas. oferecemos
                     soluções
                     inovadoras, sempre com agilidade na execução e estratégias balizadas pela união de anos de
@@ -84,35 +91,30 @@
                     comunicação.
                 </p>
             </div>
-            <div class="col-sm-12 col-lg-5 text-center">
-                <img src="<?=base_url('assets/img/')?>/ideias.png">
-            </div>
 
-            <div class="container">
-                <div class="footer-img col-sm-11 col-lg-12">
-                    <ul>
-                        <li>
-                            <a href="<?=base_url($pageList['criative']->slug)?>">
-                                <img data-wow-offset="5"   class="animate__animated animate__backInLeft wow animate__delay-1s" style="padding-bottom: 30px;" src="<?=base_url('assets/img/')?>/ico-criativo.png">                       
-                            </a>
-                        </li>                        
-                        <li >
-                            <a href="<?=base_url('producao-de-videos')?>">    
-                                <img data-wow-offset="5"  class="animate__animated animate__backInLeft wow animate__delay-0.5s" src="<?=base_url('assets/img/')?>/ico-producao-video.png">
-                            </a>
-                        </li>
-                        <li >
-                            <a href="<?=base_url('marketing-digital')?>">
-                                <img data-wow-offset="5"  class="animate__animated animate__backInRight wow animate__delay-0.5s" style="padding-bottom: 10px;" src="<?=base_url('assets/img/')?>/ico-mk-digital.png">
-                            </a>
-                        </li>
-                        <li >
-                            <a href="<?=base_url('sites')?>">
-                                <img data-wow-offset="5"  class="animate__animated animate__backInRight wow animate__delay-1s" style="padding-bottom: 7px;" src="<?=base_url('assets/img/')?>/ico-sites.png">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="footer-img col-sm-11 col-lg-12">
+                <ul>
+                    <li>
+                        <a href="<?=base_url($pageList['criative']->slug)?>">
+                            <img data-wow-offset="5"   class="animate__animated animate__backInLeft wow animate__delay-1s" style="padding-bottom: 30px;" src="<?=base_url('assets/img/')?>/ico-criativo.png">                       
+                        </a>
+                    </li>                        
+                    <li >
+                        <a href="<?=base_url('producao-de-videos')?>">    
+                            <img data-wow-offset="5"  class="animate__animated animate__backInLeft wow animate__delay-0.5s" src="<?=base_url('assets/img/')?>/ico-producao-video.png">
+                        </a>
+                    </li>
+                    <li >
+                        <a href="<?=base_url('marketing-digital')?>">
+                            <img data-wow-offset="5"  class="animate__animated animate__backInRight wow animate__delay-0.5s" style="padding-bottom: 10px;" src="<?=base_url('assets/img/')?>/ico-mk-digital.png">
+                        </a>
+                    </li>
+                    <li >
+                        <a href="<?=base_url('sites')?>">
+                            <img data-wow-offset="5"  class="animate__animated animate__backInRight wow animate__delay-1s" style="padding-bottom: 7px;" src="<?=base_url('assets/img/')?>/ico-sites.png">
+                        </a>
+                    </li>
+                </ul>
             </div>
 
         </div>

@@ -94,7 +94,7 @@
     </div>  
 
     <div class="col-5"> 
-      <label for="display_brands">Exibir Marcas</label>
+      <label for="display_brands">Exibir Download de apresentação</label>
       <input type="checkbox" name="display_brands" id="display_brands" value="1" <?=set_value('display_brands') ? 'checked': '' ?>>
     </div>  
   </div> 

@@ -44,17 +44,21 @@ class Mail_model extends CI_Model
 
         $html = '<table >
             <tr style="background: #413689;color: #fff;">
-                <td colspan="2" style="padding: 5px;text-align: center;"> Mensagem via formulário Web Site: Righi & Righi</td>
+                <td colspan="2" style="padding: 5px;text-align: center;"> Mensagem via formulário Web Site: Divermídia</td>
             </tr>
             <tr>
                 <td style="padding: 5px;"><strong>Nome:</strong></td>
                 <td style="padding: 5px;">'.$post->name.'</td>
-            </tr>
-            <tr>
+            </tr>';
+
+            if (isset($post->mail)) {
+                $html .= '<tr>
                 <td style="padding: 5px;"><strong>E-mail:</strong></td>
                 <td style="padding: 5px;">' . $post->mail . '</td>
-            </tr>
-            <tr>
+                </tr>' ;
+            }
+            
+            $html .= '<tr>
                 <td style="padding: 5px;"><strong>Telefone:</strong></td>
                 <td style="padding: 5px;">' . $post->phone . '</td>
             </tr>';

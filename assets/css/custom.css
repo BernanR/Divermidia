@@ -36,59 +36,11 @@ h1#page-title {
 main {
     overflow: hidden;
 }
-.nav-bar{
-    z-index: 999;
-    color: #687867;
-    font-size: 16px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-}
 
-.nav-bar ul {
-    list-style: none;
-}
-
-.nav-bar ul li {
-    display: inline-block;
-}
 
 .mg-0{
     margin: 0;
 }
-.nav-bar a{
-    text-transform: uppercase;
-}
-
-li.dropdown:hover > ul.dropdown-menu{
-display: inline-block;
-}
-.dropdown-item {
-    color: rgba(0,0,0,.55)!important;
-}
-
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: #00C253!important;
-}
-
-.dropdown-item{
-    font-weight: 600!important;
-}
-
-.dropdown-item:focus, .dropdown-item:hover {
-    color: #00C253!important;
-    background-color: transparent;
-}
-.btn-orcamento{
-    width: 190PX;
-    height: 52px;
-    border-radius: 26px;
-    border: none;
-    font-size: 17px;
-    padding: 15px;
-}
-
 
 .text-justify {
     text-align: justify;
@@ -105,7 +57,7 @@ display: inline-block;
 }
 
 .redes-sociais ul li {
-    padding: 10px;
+    padding: 3px;
     display: inline;
 }
 .main{
@@ -598,10 +550,102 @@ footer p{
 #pg-contato .google-maps{
     margin: 60px 0;
 }
+#main_navbar ul a{
+    text-transform: uppercase;
+    color: rgb(0 0 0 / 68%)!important;
+    font-family: 'noirpro-semibolduploaded_file';
+    border-bottom: 1px solid;
+    font-size: 16px;
+}
+
+#main_navbar ul {
+    list-style: none;
+    margin: 25px 0;
+}
+
+#main_navbar ul a.nav-link:focus, #main_navbar ul a.nav-link:hover {
+    color: #00C253!important;
+}
+
+li.dropdown:hover > ul.dropdown-menu{
+display: inline-block;
+}
+ul.dropdown-menu {
+position: absolute;
+    top: 10px;
+    width: 233px;
+}
+
+ul.dropdown-menu li {
+    display: inline-block;
+    width: 100%;
+}
+.dropdown-item {
+    color: rgba(0,0,0,.55)!important;
+}
+
+.top-btn-orcamento{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+
+.dropdown-item{
+    font-weight: 600!important;
+}
+
+#main_navbar ul a.dropdown-item:focus, #main_navbar ul a.dropdown-item:hover {
+    color: #00C253!important;
+    background-color: transparent;
+}
+.btn-orcamento{
+    width: 190PX;
+    height: 52px;
+    border-radius: 26px;
+    border: none;
+    font-size: 17px;
+    padding: 15px;
+}
+
+@media (min-width: 992px) { 
+    .redes-sociais {
+        margin-bottom: -50px;
+    }
+    
+    #main_navbar > ul li {
+        display: inline-block;
+        
+    }
+
+    #main_navbar > ul a{
+        border: 0;
+        padding: 10px;
+    }
+
+    #main_navbar {
+        padding: 0;
+    height: 35px;
+    position: relative;
+    }
+    #main_navbar > ul{
+        width: 520px;
+        position: relative;
+        top: -7px;
+    }
+
+    .redes-sociais ul {
+        top: -50px;
+    }
+}
+
 @media (min-width: 1400px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1050px;
     }
+
+
 }
 
 @media screen and (max-width: 576px) { 
@@ -624,6 +668,7 @@ footer p{
 
     .redes-sociais ul{
         top: 0;
+        padding-left: 0;
     }
 
     .two-colors tbody tr td{
@@ -735,4 +780,32 @@ footer p{
 #modal-lightbox-galery iframe{
     width: 100%!important;
     height: 400px!important;
+}
+
+.donwloadpdf{
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: stretch;
+    flex-direction: row;
+    font-weight: 500;
+    color: rgba(0,0,0,.55);
+    text-decoration: none;
+    justify-content: flex-start;
+}
+
+.donwloadpdf:hover{
+    color: #00ABE4;
+}
+.donwloadpdf p {
+    font-family: 'noirpro-semibolduploaded_file';
+}
+
+.mt-15 {
+    margin-top: 25px;
+}
+.form-footer {
+    margin-bottom: 25px;
 }

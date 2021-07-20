@@ -54,7 +54,7 @@
  * NOTE: If you change these, also change the error_reporting() code below
  */
  
- define('ENVIRONMENT', ($_SERVER['SERVER_NAME'] == 'localhost' || $_SERVER['SERVER_NAME'] == 'divermidia.local') ? 'development' : 'production');
+ define('ENVIRONMENT', ($_SERVER['SERVER_NAME'] == 'divermidia.com.br' || $_SERVER['SERVER_NAME'] == 'divermidia.local') ? 'development' : 'production');
 
 /*
  *---------------------------------------------------------------

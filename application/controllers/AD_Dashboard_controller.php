@@ -19,7 +19,7 @@ class AD_Dashboard_controller extends CI_Controller {
     {
         parent::__construct();
 
-        //is_logged(); /** tem um problema aqui, verificar depois */
+        is_logged(); /** tem um problema aqui, verificar depois */
         //$this->load->model("usuarios_model","User");
     }
 

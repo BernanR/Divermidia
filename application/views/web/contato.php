@@ -17,12 +17,14 @@
 
             <div class="col-7">
                 <div class="row download">
+                    <a class="donwloadpdf" href="https://divermidia.com.br/pdfs/apresentacao.pdf" target="_blanck">
                     <div class="col-2 text-center file">
                         <img src="<?=base_url('assets/img/pdf.png')?>" alt="Donwload apresentação" title="DOWNLOAD DA NOSSA APRESENTAÇÃO">
                     </div>
                     <div class="col-10">
                         <p>FAÇA O DOWNLOAD DA NOSSA APRESENTAÇÃO COMPLETA <br/>E CONHEÇA MAIS DETALHES SOBRE NOSSOS SERVIÇOS</p>                    
                     </div>
+                    </a>
                 </div>
                 <div class="row">
                     <div class="col-12 col-sm-12">
